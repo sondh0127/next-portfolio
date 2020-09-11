@@ -27,42 +27,7 @@ export const Answers: Array<{ id: string; answer: () => any }> = [
   {
     id: '2',
     answer: () => {
-      class CustomPromise {
-        state = 'PENDING'
-        value = undefined
-        thenCallbacks = []
-        errorCallbacks = []
-
-        constructor(action) {
-          action(this.resolver.bind(this), this.reject.bind(this))
-        }
-
-        resolver(value: any) {
-          this.state = 'RESOLVED'
-          this.value = value
-          this.thenCallbacks.forEach((callback: (value: any) => void) => {
-            callback(this.value)
-          })
-        }
-
-        reject(value: any) {
-          this.state = 'REJECTED'
-          this.value = value
-          this.errorCallbacks.forEach((callback: (value: any) => void) => {
-            callback(this.value)
-          })
-        }
-
-        then(callback) {
-          this.thenCallbacks.push(callback)
-          return this
-        }
-
-        catch(callback) {
-          this.errorCallbacks.push(callback)
-          return this
-        }
-      }
+      return
     },
   },
 ]

@@ -23,7 +23,6 @@ const WorkPage: NextPageWithLayout = () => {
 WorkPage.getInitialProps = async (context) => {
   return {}
 }
-WorkPage.getLayout = getHomeLayout
-WorkPage.title = 'Work'
+WorkPage.getLayout = getHomeLayout('Work')
 
 export default WorkPage
