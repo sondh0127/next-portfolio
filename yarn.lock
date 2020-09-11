@@ -1192,10 +1192,10 @@
     "@retail-ui/hooks" "^0.4.0"
     clsx "^1.1.1"
 
-"@retail-ui/core@0.6.10":
-  version "0.6.10"
-  resolved "https://registry.yarnpkg.com/@retail-ui/core/-/core-0.6.10.tgz#f8c213e5f2d02587e957c6e4d98439c5a9456b09"
-  integrity sha512-1FtFniGQWIIcrDMdP4yrCpTGC2J3ccsc90umHtDNquLXvr+0z/3RqyY97JMIgqNWalXT719rpRPlZEEkRgiOpA==
+"@retail-ui/core@0.6.11":
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/@retail-ui/core/-/core-0.6.11.tgz#811a5054cb595ee0cf46a84e48f07228b44ae72d"
+  integrity sha512-6LzqZ/7pN24YRUdwMHphXkFr6I1H6Lfs2SFW35SYLf6jP0QqHNXit0ixXynFKGz4CWo9Rm6D+vHbjwXRrQU61A==
   dependencies:
     "@retail-ui/action-buttons" "^0.6.0"
     "@retail-ui/alert" "^0.6.0"
@@ -3223,10 +3223,10 @@ eslint-plugin-prettier@^3.1.4:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-react-hooks@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.1.tgz#b37e1ff622b7800cd673901de32db1103d48411d"
-  integrity sha512-vFJNwsf4MLYS0lHYfz9LqxQ+GccYsGGeKPHDxgkIaKbAhNuTLnST+q44pt81MzJZyFU5K4XLF6WiCGv3Yb6tCg==
+eslint-plugin-react-hooks@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.2.tgz#2eb53731d11c95826ef7a7272303eabb5c9a271e"
+  integrity sha512-ykUeqkGyUGgwTtk78C0o8UG2fzwmgJ0qxBGPp2WqRKsTwcLuVf01kTDRAtOsd4u6whX2XOC8749n2vPydP82fg==
 
 eslint-plugin-react@^7.20.6:
   version "7.20.6"
