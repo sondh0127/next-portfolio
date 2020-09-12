@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import React from 'react'
 
 import Page from '@/components/pages/projects/pages'
@@ -8,10 +7,6 @@ import { NextPageWithLayout } from '@/types'
 const ProjectsPage: NextPageWithLayout = () => {
   return (
     <React.Fragment>
-      <Head>
-        <title>Projects</title>
-      </Head>
-
       <Page />
     </React.Fragment>
   )

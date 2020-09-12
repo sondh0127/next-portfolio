@@ -6,6 +6,7 @@
   - I am a software engineer focusing on the front-end development.
 - Education
   - HUST
+  - Best presentation award in graduation project defend
   - React Storybook Tutorial: https://www.youtube.com/watch?v=BySFuXgG-ow&list=PLC3y8-rFHvwhC-j3x3t9la8-GQJGViDQk
   - React - The Complete Guide (incl Hooks, React Router, Redux)
 - Professional Experience (Khong co trong portfolio)
@@ -13,8 +14,6 @@
 - Personal Projects
 - Technical Skills:
   - Typescript, Javascript, React, NextJs
-- Activities & Awards: (Khong co trong portfolio)
-  - Best presentation award in graduation project defend
 
 ## Technology:
 
@@ -29,7 +28,4 @@
 - a to github / download CV / twitter / send email | (linkedIn)
 - create icon for technology
 - create profile on github
-
-## Page Transition
-
-## Twiter Layout + Github
+- favicon

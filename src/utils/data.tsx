@@ -11,38 +11,47 @@ export const LANGUAGES = {
   },
 }
 
+export type TLanguages = keyof typeof LANGUAGES
+
 export const TECHNOLOGIES = {
-  react: {
+  reactjs: {
     name: 'React',
-    logo: `https://cdn.worldvectorlogo.com/logos/react.svg`,
+    logo: `https://reactjs.org/favicon-32x32.png?v=f4d46f030265b4c48a05c999b8d93791`,
     website: `https://reactjs.org/`,
   },
   nextjs: {
     name: 'Next.js',
-    logo: `https://cdn.worldvectorlogo.com/logos/next-js.svg`,
+    logo: `https://nextjs.org/static/favicon/favicon.ico`,
     website: `https://reactjs.org/`,
   },
   tailwindcss: {
     name: 'Tailwindcss',
-    logo: `https://cdn.worldvectorlogo.com/logos/tailwindcss.svg`,
+    logo: `https://tailwindcss.com/favicon-32x32.png`,
     website: `https://tailwindcss.com/`,
   },
   graphql: {
-    name: 'Graphql',
-    logo: `https://cdn.worldvectorlogo.com/logos/graphql.svg`,
+    name: 'GraphQL',
+    logo: `https://graphql.org/img/favicon.png`,
     website: `https://graphql.org/`,
   },
   hasura: {
     name: 'Hasura',
-    logo: `https://graphql-engine-cdn.hasura.io/img/powered_by_hasura_white.svg`,
+    logo: `https://hasura.io/icons-2dd80234672d9f3a718137c7b0cda15b/favicon.ico`,
     website: `https://hasura.io/`,
   },
+  eui: {
+    name: 'Elastic UI',
+    logo: `https://www.elastic.co/favicon.ico`,
+    website: `https://elastic.github.io/eui/#/`,
+  },
 }
+
+export type TTechnologies = keyof typeof TECHNOLOGIES
 
 export const DEVTOOLS = {
   storybook: {
     name: 'Storybook',
-    logo: `https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png`,
+    logo: `https://pbs.twimg.com/profile_images/1100804485616566273/sOct-Txm.png`,
     website: `https://storybook.js.org/`,
   },
   lerna: {
@@ -52,7 +61,14 @@ export const DEVTOOLS = {
   },
   tsdx: {
     name: 'TSDX',
-    logo: `https://user-images.githubusercontent.com/4060187/56918426-fc747600-6a8b-11e9-806d-2da0b49e89e4.png`,
+    logo: `https://tsdx.io/favicon/favicon-32x32.png`,
     website: `https://tsdx.io/`,
   },
+  docker: {
+    name: 'Docker',
+    logo: `https://www.docker.com/sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png`,
+    website: `https://www.docker.com/`,
+  },
 }
+
+export type TDevtools = keyof typeof DEVTOOLS
