@@ -14,28 +14,6 @@ type HomeLayoutProps = {
   children: React.ReactNode
 }
 
-export const ROUTES = [
-  {
-    path: '/',
-    name: 'Home',
-  },
-  {
-    path: '/about',
-    name: 'About',
-  },
-  {
-    path: '/work',
-    name: 'Work',
-  },
-  {
-    path: '/education',
-    name: 'Education',
-  },
-  {
-    path: '/blog',
-    name: 'Blog (WIP)',
-  },
-]
 /* -------------------------------- Constant -------------------------------- */
 const HEIGHT_THRESHOLD = 70
 

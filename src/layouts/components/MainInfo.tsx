@@ -26,10 +26,10 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
       <div className={`text-gray-600 dark:text-gray-100`}>
         <div className={`flex flex-col items-center font-bold sm:flex-row`}>
           <span className={`text-xl sm:mr-2`} role="img" aria-label="name">
-            Son Do Hong
+            Son H. Do
           </span>
           <span className={`text-lg`} role="img" aria-label="name">
-            🎉 Looking for a job.
+            🎉 Availale for hire.
           </span>
         </div>
         <div className={`mt-1 text-base font-medium`}>

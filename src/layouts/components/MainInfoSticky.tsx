@@ -21,12 +21,14 @@ export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
           />
         </div>
         <div className={`text-gray-800 dark:text-gray-100`}>
-          <div className={`flex flex-col items-center font-bold sm:flex-row`}>
+          <div
+            className={`flex flex-col items-center font-semibold sm:flex-row`}
+          >
             <span className={`text-lg sm:mr-2`} role="img" aria-label="name">
-              Son Do Hong
+              Son H. Do
             </span>
             <span className={`text-base`} role="img" aria-label="name">
-              🎉 Looking for a job.
+              🎉 Availale for hire.
             </span>
           </div>
           <div className={`flex items-center mt-1 text-sm font-medium`}>

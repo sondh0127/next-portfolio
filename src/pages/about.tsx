@@ -10,11 +10,11 @@ const AboutPage: NextPageWithLayout = () => {
       <h1>About</h1>
       <p>Software engineer</p>
       <p>2020 new graduated</p>
-      <p>I am a software engineer focusing on the front-end development</p>
-      <p>Fontend development</p>
-      <p>My Name is Son Do Hong</p>
+      <p>Frontend development</p>
+      <p>My Name is Do Hong Son</p>
       <p>
-        I am developer from Hanoi, Vietnam
+        <p>I am a software engineer focusing on the front-end development</p>
+        from Hanoi, Vietnam
         <p>
           that specialized in creating UI components that include advanced
           logic, beautiful styles, and transitions. I help startups develop

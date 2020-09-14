@@ -43,7 +43,7 @@ const IndexPage: NextPageWithLayout = () => {
     <div>
       <div className="py-20">
         <h1 className="text-5xl text-center text-accent-1">
-          Front End Blog by Son Do Hong
+          Front End Blog by @sondh0127
         </h1>
       </div>
     </div>

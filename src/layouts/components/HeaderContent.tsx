@@ -133,11 +133,10 @@ const ROUTES = [
       </svg>
     ),
   },
-
-  {
-    path: '/blog',
-    name: 'Blog (WIP)',
-  },
+  // {
+  //   path: '/blog',
+  //   name: 'Blog (WIP)',
+  // },
 ]
 
 export const HeaderContent: React.FC = (props) => {
@@ -209,7 +208,7 @@ export const HeaderContent: React.FC = (props) => {
                 <div
                   className={`text-sm text-gray-800 text dark:text-gray-100 dark:hover:text-purple-600`}
                 >
-                  Son Do Hong
+                  Son H.Do
                 </div>
                 <div className={`text-xs text-gray-500`}>@sondh017</div>
               </div>

@@ -60,6 +60,16 @@ export const RightBar: React.FC = (props) => {
                 <li>Prisma</li>
               </ul>
             </div>
+            <div className={`mt-4`}>
+              <h3 className={`text-xl font-bold`}>Wishlist</h3>
+              <ul
+                className={`flex flex-col mt-2 space-y-1 list-disc list-inside`}
+              >
+                <li>Vue 3 composition API (Hooks)</li>
+                <li>NextJs with Mdx</li>
+                <li>More React Native</li>
+              </ul>
+            </div>
           </div>
 
           <div
