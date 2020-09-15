@@ -42,9 +42,7 @@ const AboutPage: NextPageWithLayout = () => {
         <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
           About me
         </h1>
-        {/* <h3 className="text-lg text-gray-600">
-          Some of the projects I&apos;ve been working on.
-        </h3> */}
+
         <div
           className={`relative flex-shrink-0 w-16 mt-4 text-center no-underline rounded-full select-none sm:mr-6 md:w-32`}
         >
@@ -78,7 +76,9 @@ const AboutPage: NextPageWithLayout = () => {
 
         <div className={`mx-auto`}>
           {/* Hobby */}
-          <h2>What do I do in my free time?</h2>
+          <h2 className={`dark:text-gray-100`}>
+            What do I do in my free time?
+          </h2>
           <ul>
             <li>I love to cook (and eat).</li>
             <li>I like gaming and esports.</li>
@@ -102,7 +102,7 @@ const AboutPage: NextPageWithLayout = () => {
         </div>
 
         <div>
-          <h2>Some of my Technical Skills</h2>
+          <h2 className={`dark:text-gray-100`}>Some of my Technical Skills</h2>
           <div className={`grid grid-cols-4 px-4 md:grid-cols-7 gap-y-4`}>
             {skills.map((item) => {
               const teches = { ...TECHNOLOGIES, ...LANGUAGES, ...DEVTOOLS }
@@ -126,24 +126,29 @@ const AboutPage: NextPageWithLayout = () => {
             })}
           </div>
 
-          <h2>My stacks</h2>
+          <h2 className={`dark:text-gray-100`}>My stacks</h2>
           <a
             href="https://github.com/sondh0127/nextjs-hasura-fullstack"
             target="_blank"
             rel="noreferrer"
+            className={`dark:text-gray-100`}
           >
             React + Typescript + GraphQL + NextJs + Hasura
           </a>
 
           <h2>
             <Link href="/projects">
-              <a href="/projects">Check my works !</a>
+              <a className={`dark:text-gray-100`} href="/projects">
+                Check my works !
+              </a>
             </Link>
           </h2>
         </div>
 
         <div>
-          <a href="mailto:sondh017@gmail.com">Send me an email </a>
+          <a className={`dark:text-gray-100`} href="mailto:sondh017@gmail.com">
+            Send me an email{' '}
+          </a>
         </div>
       </article>
     </div>

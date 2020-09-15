@@ -36,7 +36,7 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
         <div className={`mt-1 text-base font-medium`}>
           <div>
             <span role="img" aria-label="vietnam">
-              Hanoi / Vietnam 🇻🇳
+              Hanoi, Vietnam 🇻🇳
             </span>
           </div>
           <div>
@@ -50,7 +50,7 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
               <div className={`sm:mr-2`} style={{ color: '#61DAFB' }}>
                 <ReactLogo className={`inline-block w-5 h-5`} />
               </div>
-              <div className={`flex-1`}>Front-End developer</div>
+              <div className={`flex-1`}>Front-end developer</div>
             </div>
           </div>
           <div className={`text-sm italic text-purple-600`}>

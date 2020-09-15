@@ -266,7 +266,7 @@ const ProjectsPage = () => {
           <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
             Projects
           </h1>
-          <h3 className="text-lg text-gray-600">
+          <h3 className="text-lg text-gray-600 dark:text-gray-200">
             Some of the projects I&apos;ve been working on.
           </h3>
         </div>

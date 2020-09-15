@@ -104,9 +104,11 @@ export const RightBar: React.FC = (props) => {
           </div>
         </div>
         <footer
-          className={`flex flex-col items-center py-2 mb-6 text-sm text-gray-800`}
+          className={`flex flex-col items-center py-2 mb-6 text-sm text-gray-800 dark:text-gray-100`}
         >
-          <span className={`text-sm text-gray-800`}>© 2020. @sondh0127</span>
+          <span className={`text-sm text-gray-800 dark:text-gray-100`}>
+            © 2020. @sondh0127
+          </span>
           <a
             className={`flex items-center`}
             href="https://vercel.com/"

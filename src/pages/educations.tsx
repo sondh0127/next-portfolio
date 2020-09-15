@@ -13,18 +13,16 @@ const EducationPage: NextPageWithLayout = () => {
           <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
             Educations
           </h1>
-          {/* <h3 className="text-lg text-gray-600">
-      Some of the projects I&apos;ve been working on.
-    </h3> */}
         </div>
 
         <article className={`px-12 prose text-gray-700 dark:text-gray-200`}>
           <div>
-            <h3>University</h3>
+            <h3 className={`dark:text-gray-100`}>University</h3>
             <ul>
               <li>
                 I&apos;m study at{' '}
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://www.facebook.com/GlobalICTBachKhoa/"
                   target="_blank"
                   rel="noreferrer"
@@ -33,6 +31,7 @@ const EducationPage: NextPageWithLayout = () => {
                 </a>{' '}
                 , which is fully english training program for IT Engineer from{' '}
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://en.hust.edu.vn/home"
                   target="_blank"
                   rel="noreferrer"
@@ -41,15 +40,20 @@ const EducationPage: NextPageWithLayout = () => {
                 </a>
               </li>
               <li>
-                I have graduated in <strong>Aug 2020</strong> at with{' '}
-                <strong>Degree of Enginner in Information Techonology</strong>
+                I have graduated in{' '}
+                <strong className={`dark:text-gray-100`}>Aug 2020</strong> at
+                with{' '}
+                <strong className={`dark:text-gray-100`}>
+                  Degree of Enginner in Information Techonology
+                </strong>
               </li>
               <li>
-                Degree classification: <strong>Very good</strong> / GPA:{' '}
-                <strong>3.31</strong>
+                Degree classification:{' '}
+                <strong className={`dark:text-gray-100`}>Very good</strong> /
+                GPA: <strong className={`dark:text-gray-100`}>3.31</strong>
               </li>
             </ul>
-            <h3>Self learning</h3>
+            <h3 className={`dark:text-gray-100`}>Self learning</h3>
             <p>
               I have complete alot of course, resource tutorial available from
               Internet about my career. Some notable course such as:
@@ -57,51 +61,65 @@ const EducationPage: NextPageWithLayout = () => {
             <ul>
               <li>
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   React - The Complete Guide (incl Hooks, React Router, Redux)
-                  by <strong>Maximilian Schwarzmüller</strong>
+                  by{' '}
+                  <strong className={`dark:text-gray-100`}>
+                    Maximilian Schwarzmüller
+                  </strong>
                 </a>
               </li>
               <li>
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://www.youtube.com/watch?v=kfmh2mMf3fs&list=PLN3n1USn4xlkDk8vPVtgyGG3_1eXYPrW-"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Typescript, Next.js, And GraphQL Series by{' '}
-                  <strong>Ben Awad</strong>
+                  <strong className={`dark:text-gray-100`}>Ben Awad</strong>
                 </a>
               </li>
               <li>
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://hasura.io/learn/graphql/nextjs-fullstack-serverless/introduction/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Nextjs Frontend GraphQL Tutorial with{' '}
-                  <strong>Hasura Learn</strong>
+                  <strong className={`dark:text-gray-100`}>Hasura Learn</strong>
                 </a>
               </li>
               <li>
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Tailwind CSS Tutorial from <strong>The Net Ninja</strong>
+                  Tailwind CSS Tutorial from{' '}
+                  <strong className={`dark:text-gray-100`}>
+                    The Net Ninja
+                  </strong>
                 </a>
               </li>
               <li>
                 <a
+                  className={`dark:text-gray-100`}
                   href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Herm workshop on everything you need to build fullstack
-                  GraphQL apps <strong>Christian Nwamba</strong>
+                  GraphQL apps
+                  <strong className={`dark:text-gray-100`}>
+                    Christian Nwamba
+                  </strong>
                 </a>
               </li>
             </ul>
