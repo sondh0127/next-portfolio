@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { srcAvatar, srcAvatar2 } from '@/utils/data'
+
 /* ---------------------------------- Types --------------------------------- */
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface MainInfoStickyProps {}
@@ -16,7 +18,7 @@ export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
           <img
             alt="avatar"
             className="object-cover w-full h-full bg-purple-300 rounded-full"
-            src="https://avatars3.githubusercontent.com/u/62163604?s=460&amp;u=2d0ed85df93a996e55f9f81034abd2975d2342d3&amp;v=4"
+            src={srcAvatar}
             loading="lazy"
           />
         </div>
@@ -28,7 +30,7 @@ export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
               Son H. Do
             </span>
             <span className={`text-base`} role="img" aria-label="name">
-              🎉 Availale for hire.
+              🎉 Available for hire.
             </span>
           </div>
           <div className={`flex items-center mt-1 text-sm font-medium`}>
@@ -38,7 +40,13 @@ export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
               </span>
             </div>
             <div className={`ml-2 text-xs italic text-purple-600`}>
-              @sondh0127
+              <a
+                href="https://github.com/sondh0127"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @sondh0127
+              </a>
             </div>
           </div>
         </div>

@@ -10,9 +10,9 @@ import {
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
-import { string } from 'zod'
 
 import WebsiteIcon from '@/components/icons/WebsiteIcon'
+import MainInfoHeader from '@/components/MainInfoHeader'
 import { getHomeLayout } from '@/layouts/HomeLayout'
 import { NextPageWithLayout } from '@/types'
 import {
@@ -41,26 +41,21 @@ export type TProject = {
   devtools: TDevtools[]
 }
 
+/* ---------------------------------- Data ---------------------------------- */
+
 const projects: TProject[] = [
   {
     id: `1`,
-    name: 'Doclabels (Gradutation Project)',
+    name: 'Retail UI 🛒',
     description:
-      'Annotation system for labelling data from documents (with PDF documents)',
-    github: 'https://github.com/sondh0127/doclabels',
-    website: 'https://next-doclabel.sondh0127.vercel.app/',
+      'A collection of accessible and reusable components for React to rapid development of gorgeous interfaces with Tailwind CSS - utility-first CSS framework',
+    github: 'https://github.com/sondh0127/retail-ui',
+    website: 'https://github.com/sondh0127/retail-ui',
     image:
-      'https://user-images.githubusercontent.com/62163604/93016959-31d12380-f5ef-11ea-9e83-5461ba7eef24.png',
+      'https://user-images.githubusercontent.com/62163604/93030253-ce291380-f64b-11ea-9df2-28bd64dfeb78.png',
     languages: ['javascript', 'typescript'],
-    technologies: [
-      'reactjs',
-      'nextjs',
-      'graphql',
-      'apolloclient',
-      'hasura',
-      'eui',
-    ],
-    devtools: ['docker'],
+    technologies: ['reactjs', 'tailwindcss'],
+    devtools: ['lerna', 'tsdx', 'storybook'],
   },
   {
     id: `2`,
@@ -97,16 +92,23 @@ const projects: TProject[] = [
   },
   {
     id: `4`,
-    name: 'Retail UI 🛒',
+    name: 'Doclabels (Graduation Project)',
     description:
-      'A collection of accessible and reusable components for React to rapid development of gorgeous interfaces with Tailwind CSS - utility-first CSS framework',
-    github: 'https://github.com/sondh0127/retail-ui',
-    website: 'https://github.com/sondh0127/retail-ui',
+      'Annotation system for labelling data from documents (with PDF documents)',
+    github: 'https://github.com/sondh0127/doclabels',
+    website: 'https://next-doclabel.sondh0127.vercel.app/',
     image:
-      'https://user-images.githubusercontent.com/62163604/93030253-ce291380-f64b-11ea-9df2-28bd64dfeb78.png',
+      'https://user-images.githubusercontent.com/62163604/93016959-31d12380-f5ef-11ea-9e83-5461ba7eef24.png',
     languages: ['javascript', 'typescript'],
-    technologies: ['reactjs', 'tailwindcss'],
-    devtools: ['lerna', 'tsdx', 'storybook'],
+    technologies: [
+      'reactjs',
+      'nextjs',
+      'graphql',
+      'apolloclient',
+      'hasura',
+      'eui',
+    ],
+    devtools: ['docker'],
   },
   {
     id: `5`,
@@ -149,6 +151,8 @@ const projects: TProject[] = [
     devtools: [],
   },
 ]
+
+/* ------------------------------- Components ------------------------------- */
 
 const ProjectsList = () => {
   return (
@@ -253,19 +257,24 @@ const CreateProjecLink = () => {
 
 const ProjectsPage = () => {
   return (
-    <div className={`mx-auto mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}>
-      <div className="px-3 py-2 text-center">
-        <h1 className="text-3xl font-bold text-purple-600 uppercase">
-          Projects
-        </h1>
-        <h3 className="text-lg text-gray-600">
-          Some of the projects I&apos;ve been working on.
-        </h3>
-      </div>
-      {/* <CreateProjecLink /> */}
+    <div>
+      <MainInfoHeader />
+      <div
+        className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}
+      >
+        <div className="px-3 py-2 text-center">
+          <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
+            Projects
+          </h1>
+          <h3 className="text-lg text-gray-600">
+            Some of the projects I&apos;ve been working on.
+          </h3>
+        </div>
+        {/* <CreateProjecLink /> */}
 
-      <div className={`mt-6`}>
-        <ProjectsList />
+        <div className={`mt-6`}>
+          <ProjectsList />
+        </div>
       </div>
     </div>
   )

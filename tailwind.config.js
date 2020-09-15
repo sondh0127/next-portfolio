@@ -20,5 +20,5 @@ module.exports = resolveConfig({
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 })

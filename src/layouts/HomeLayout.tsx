@@ -5,8 +5,6 @@ import { useWindowScroll } from 'react-use'
 import { NextPageWithLayout } from '@/types'
 
 import HeaderContent from './components/HeaderContent'
-import MainInfo from './components/MainInfo'
-import MainInfoSticky from './components/MainInfoSticky'
 import RightBar from './components/RightBar'
 
 type HomeLayoutProps = {
@@ -14,19 +12,12 @@ type HomeLayoutProps = {
   children: React.ReactNode
 }
 
-/* -------------------------------- Constant -------------------------------- */
-const HEIGHT_THRESHOLD = 70
-
 /* -------------------------------- Component ------------------------------- */
 
 const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
   const { title, children } = props
   const [isOpen, setIsOpen] = React.useState(false)
-  const [isSimple, setIsSimple] = React.useState(false)
-  const scroll = useWindowScroll()
-  React.useEffect(() => {
-    setIsSimple(scroll.y > HEIGHT_THRESHOLD)
-  }, [scroll])
+
   return (
     <React.Fragment>
       <Head>
@@ -43,24 +34,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 
           <main className={`flex justify-between flex-1 min-h-full `}>
             <div className={`flex flex-col flex-1 border-l border-r`}>
-              <div className={``}>
-                <div
-                  className={`${
-                    !isSimple ? 'opacity-0 hidden' : 'opacity-100 z-10 block'
-                  } sticky top-0 w-full transition duration-150`}
-                >
-                  <MainInfoSticky />
-                </div>
-
-                <div
-                  className={`${
-                    isSimple ? `opacity-0 max-h-0` : `opacity-100`
-                  } transition duration-150 ease-in-out`}
-                >
-                  <MainInfo />
-                </div>
-                <div>{children}</div>
-              </div>
+              <div>{children}</div>
             </div>
 
             <div className={`hidden mr-2 lg:w-72 lg:block`}>

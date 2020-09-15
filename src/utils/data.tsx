@@ -1,11 +1,14 @@
+export const srcAvatar = `https://avatars2.githubusercontent.com/u/62163604?s=460&u=3b8d2b8193fac52cd2c38cee5764689bb81d65c8&v=4`
+export const srcAvatar2 = `https://avatars3.githubusercontent.com/u/62163604?s=460&amp;u=2d0ed85df93a996e55f9f81034abd2975d2342d3&amp;v=4`
+
 export const LANGUAGES = {
   javascript: {
-    name: 'Javascript',
+    name: 'JavaScript',
     logo: `https://cdn.worldvectorlogo.com/logos/javascript.svg`,
     website: `https://developer.mozilla.org/en-US/docs/Web/JavaScript`,
   },
   typescript: {
-    name: 'Typescript',
+    name: 'TypeScript',
     logo: `https://cdn.worldvectorlogo.com/logos/typescript.svg`,
     website: `https://www.typescriptlang.org/`,
   },
@@ -75,7 +78,7 @@ export const TECHNOLOGIES = {
     website: `https://restfulapi.net/`,
   },
   reactrouter: {
-    name: 'React router',
+    name: 'React Router',
     logo: `https://reactrouter.com/favicon-32x32.png`,
     website: `https://restfulapi.net/`,
   },
@@ -85,7 +88,7 @@ export const TECHNOLOGIES = {
     website: `https://redux.js.org/`,
   },
   styledcomponents: {
-    name: 'Styled components',
+    name: 'Styled Components',
     logo: `https://styled-components.com/favicon.png`,
     website: `https://styled-components.com/`,
   },
@@ -114,6 +117,16 @@ export const TECHNOLOGIES = {
     logo: `https://callstack.github.io/react-native-paper/images/favicon.ico`,
     website: `https://callstack.github.io/react-native-paper/`,
   },
+  antdesign: {
+    name: 'Ant Design',
+    logo: `https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg`,
+    website: `https://ant.design/`,
+  },
+  reactquery: {
+    name: 'React Query',
+    logo: `https://react-query.tanstack.com/_next/static/images/favicon-eed8346421218b24d8fd0fd55c2f9e35.png`,
+    website: `https://react-query.tanstack.com/`,
+  },
 }
 
 export type TTechnologies = keyof typeof TECHNOLOGIES
@@ -138,6 +151,21 @@ export const DEVTOOLS = {
     name: 'Docker',
     logo: `https://www.docker.com/sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png`,
     website: `https://www.docker.com/`,
+  },
+  git: {
+    name: 'Git',
+    logo: `https://git-scm.com/favicon.ico`,
+    website: `https://git-scm.com/`,
+  },
+  github: {
+    name: 'Github',
+    logo: `https://github.githubassets.com/favicons/favicon.png`,
+    website: `https://github.com/`,
+  },
+  vscode: {
+    name: 'Visual Studio Code',
+    logo: `https://code.visualstudio.com/favicon.ico`,
+    website: `https://code.visualstudio.com/`,
   },
 }
 

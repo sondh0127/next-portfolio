@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import ReactLogo from '@/components/icons/ReactLogo'
+import { srcAvatar, srcAvatar2 } from '@/utils/data'
 
 /* -------------------------------- Constant -------------------------------- */
 
@@ -19,7 +20,7 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
         <img
           alt="avatar"
           className="object-cover w-full h-full bg-purple-300 rounded-full"
-          src="https://avatars3.githubusercontent.com/u/62163604?s=460&amp;u=2d0ed85df93a996e55f9f81034abd2975d2342d3&amp;v=4"
+          src={srcAvatar}
           loading="lazy"
         />
       </div>
@@ -29,7 +30,7 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
             Son H. Do
           </span>
           <span className={`text-lg`} role="img" aria-label="name">
-            🎉 Availale for hire.
+            🎉 Available for hire.
           </span>
         </div>
         <div className={`mt-1 text-base font-medium`}>
@@ -52,7 +53,15 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
               <div className={`flex-1`}>Front-End developer</div>
             </div>
           </div>
-          <div className={`text-sm italic text-purple-600`}>@sondh0127</div>
+          <div className={`text-sm italic text-purple-600`}>
+            <a
+              href="https://github.com/sondh0127"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @sondh0127
+            </a>
+          </div>
         </div>
       </div>
     </div>
