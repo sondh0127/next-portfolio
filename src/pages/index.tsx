@@ -18,7 +18,7 @@ const IndexPage: NextPageWithLayout = () => {
           </h1>
           <h2 className={`mt-2 font-semibold text-purple-600`}>@sondh0127</h2>
         </div>
-        <article className={`mt-5 prose text-center`}>
+        <article className={`mx-auto mt-5 prose text-center`}>
           <h2>
             <Link href="/about">
               <a className={`dark:text-gray-100`} href="/projects">
