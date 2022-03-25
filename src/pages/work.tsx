@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-import { getHomeLayout } from '@/layouts/HomeLayout'
+import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 
 const WorkPage: NextPageWithLayout = () => {
@@ -16,6 +16,20 @@ const WorkPage: NextPageWithLayout = () => {
         <li>twitter react native</li>
         <li>airbnb clone</li>
       </ul>
+      {/* Thudo Multimedia:
+
+      Livestream Transcode Admin CMS.
+      Interactive Livesteam (Truyền hình tương tác)
+
+
+      Freelance projects
+      Manager large multiple file upload admin - Customer: Tab - Califonia: |
+      Desc:
+
+      Customer: Think Pro ecommerce New Frontstoter Website - Think Pro VN
+      Desc: Editor
+
+      MinterScan - Customer: MinterScanIO (Quang Anh Nguyen) - USA */}
     </div>
   )
 }
@@ -23,6 +37,6 @@ const WorkPage: NextPageWithLayout = () => {
 WorkPage.getInitialProps = async (context) => {
   return {}
 }
-WorkPage.getLayout = getHomeLayout('Work')
+WorkPage.getLayout = getDefaultLayout('Work')
 
 export default WorkPage

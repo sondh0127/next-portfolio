@@ -1,18 +1,13 @@
 import MainInfoHeader from '@/components/MainInfoHeader'
-import { getHomeLayout } from '@/layouts/HomeLayout'
+import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 
 const EducationPage: NextPageWithLayout = () => {
   return (
     <div>
-      <MainInfoHeader />
-      <div
-        className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}
-      >
+      <div className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}>
         <div className="px-3 py-2 text-center">
-          <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
-            Educations
-          </h1>
+          <h1 className="text-3xl font-bold text-purple-600 underline uppercase">Educations</h1>
         </div>
 
         <article className={`px-12 prose text-gray-700 dark:text-gray-200`}>
@@ -40,23 +35,21 @@ const EducationPage: NextPageWithLayout = () => {
                 </a>
               </li>
               <li>
-                I have graduated in{' '}
-                <strong className={`dark:text-gray-100`}>Aug 2020</strong> at
+                I have graduated in <strong className={`dark:text-gray-100`}>Aug 2020</strong> at
                 with{' '}
                 <strong className={`dark:text-gray-100`}>
                   Degree of Enginner in Information Techonology
                 </strong>
               </li>
               <li>
-                Degree classification:{' '}
-                <strong className={`dark:text-gray-100`}>Very good</strong> /
+                Degree classification: <strong className={`dark:text-gray-100`}>Very good</strong> /
                 GPA: <strong className={`dark:text-gray-100`}>3.31</strong>
               </li>
             </ul>
             <h3 className={`dark:text-gray-100`}>Self learning</h3>
             <p>
-              I have complete alot of course, resource tutorial available from
-              Internet about my career. Some notable course such as:
+              I have complete alot of course, resource tutorial available from Internet about my
+              career. Some notable course such as:
             </p>
             <ul>
               <li>
@@ -66,11 +59,8 @@ const EducationPage: NextPageWithLayout = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  React - The Complete Guide (incl Hooks, React Router, Redux)
-                  by{' '}
-                  <strong className={`dark:text-gray-100`}>
-                    Maximilian Schwarzmüller
-                  </strong>
+                  React - The Complete Guide (incl Hooks, React Router, Redux) by{' '}
+                  <strong className={`dark:text-gray-100`}>Maximilian Schwarzmüller</strong>
                 </a>
               </li>
               <li>
@@ -103,9 +93,7 @@ const EducationPage: NextPageWithLayout = () => {
                   rel="noreferrer"
                 >
                   Tailwind CSS Tutorial from{' '}
-                  <strong className={`dark:text-gray-100`}>
-                    The Net Ninja
-                  </strong>
+                  <strong className={`dark:text-gray-100`}>The Net Ninja</strong>
                 </a>
               </li>
               <li>
@@ -115,11 +103,8 @@ const EducationPage: NextPageWithLayout = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Herm workshop on everything you need to build fullstack
-                  GraphQL apps
-                  <strong className={`dark:text-gray-100`}>
-                    Christian Nwamba
-                  </strong>
+                  Herm workshop on everything you need to build fullstack GraphQL apps
+                  <strong className={`dark:text-gray-100`}>Christian Nwamba</strong>
                 </a>
               </li>
             </ul>
@@ -134,6 +119,6 @@ const EducationPage: NextPageWithLayout = () => {
   )
 }
 
-EducationPage.getLayout = getHomeLayout('Educations | @sondh0127')
+EducationPage.getLayout = getDefaultLayout('Educations | @sondh0127')
 
 export default EducationPage

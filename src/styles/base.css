@@ -1,0 +1,64 @@
+:root {
+  @apply scroll-smooth font-display antialiased;
+}
+
+html {
+  @apply bg-white text-gray-700;
+  scrollbar-color: #00000080 transparent;
+  scrollbar-width: auto;
+}
+
+
+html[class*="dark"] {
+  @apply bg-black text-white;
+  scrollbar-color: #ffffffb3 transparent;
+  scrollbar-width: auto;
+}
+
+body {
+  @apply m-0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#__next {
+  @apply relative z-0;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-black/50 dark:bg-white/70;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-black/60 dark:hover:bg-white/80;
+}
+
+button {
+  /* Disables tap highlight color on Chrome */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Input darkmode fix for checkbox / radio */
+.dark [type="checkbox"]:checked,
+.dark [type="radio"]:checked {
+  background-color: currentColor;
+}
+
+/* Typography */
+.page-title {
+  @apply my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200;
+}
+
+.section-title {
+  @apply mb-3 text-lg font-semibold text-gray-600 dark:text-gray-300;
+}

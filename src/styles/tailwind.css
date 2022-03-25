@@ -1,16 +1,9 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
+
+@import "tailwindcss/base";
+@import './base.css';
 @import './bar-of-progress.css';
 
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/components";
 
-/* Typography */
-.page-title {
-  @apply my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200;
-}
-
-.section-title {
-  @apply mb-3 text-lg font-semibold text-gray-600 dark:text-gray-300;
-}
-
-@tailwind utilities;
+@import "tailwindcss/utilities";

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-import { getHomeLayout } from '@/layouts/HomeLayout'
+import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 import {
   DEVTOOLS,
@@ -39,9 +39,7 @@ const AboutPage: NextPageWithLayout = () => {
   return (
     <div className={`mx-auto mt-6 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}>
       <div className="flex flex-col items-center px-3 py-2 text-center">
-        <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
-          About me
-        </h1>
+        <h1 className="text-3xl font-bold text-purple-600 underline uppercase">About me</h1>
 
         <div
           className={`relative flex-shrink-0 w-16 mt-4 text-center no-underline rounded-full select-none sm:mr-6 md:w-32`}
@@ -59,32 +57,27 @@ const AboutPage: NextPageWithLayout = () => {
         <div>
           <p className={`text-lg`}>My name is Do Hong Son</p>
           <p>
-            I&apos;m <span>software engineer</span> focusing on the front-end
-            development, currently living in 📍 Hanoi, Vietnam
+            I&apos;m <span>software engineer</span> focusing on the front-end development, currently
+            living in 📍 Hanoi, Vietnam
           </p>
           <p>
-            I specialize in creating UI components that include advanced logic,
-            beautiful designs, and transitions that can help startups develop
-            quality applications efficiently.
+            I specialize in creating UI components that include advanced logic, beautiful designs,
+            and transitions that can help startups develop quality applications efficiently.
           </p>
           <p>
-            I&apos;m enthusiastic about self-teaching, exploring and updating
-            the latest trends in the webdev industry and the open-source
-            community.
+            I&apos;m enthusiastic about self-teaching, exploring and updating the latest trends in
+            the webdev industry and the open-source community.
           </p>
         </div>
 
         <div className={`mx-auto`}>
           {/* Hobby */}
-          <h2 className={`dark:text-gray-100`}>
-            What do I do in my free time?
-          </h2>
+          <h2 className={`dark:text-gray-100`}>What do I do in my free time?</h2>
           <ul>
             <li>I love to cook (and eat).</li>
             <li>I like gaming and esports.</li>
             <li>
-              I worship the Internet and like to watch Youtube channel about
-              technology.{' '}
+              I worship the Internet and like to watch Youtube channel about technology.{' '}
               <a
                 href="https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw"
                 target="_blank"
@@ -93,10 +86,7 @@ const AboutPage: NextPageWithLayout = () => {
                 Check out this boi.
               </a>
             </li>
-            <li>
-              I&apos;m listening to any kind of music from pop, vpop, rap,
-              kpop,...
-            </li>
+            <li>I&apos;m listening to any kind of music from pop, vpop, rap, kpop,...</li>
             <li>I&apos;m also looking for gym.</li>
           </ul>
         </div>
@@ -155,6 +145,6 @@ const AboutPage: NextPageWithLayout = () => {
   )
 }
 
-AboutPage.getLayout = getHomeLayout('About me | @sondh0127')
+AboutPage.getLayout = getDefaultLayout('About me | @sondh0127')
 
 export default AboutPage

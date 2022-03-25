@@ -1,12 +1,8 @@
-import * as React from 'react'
 
-import { srcAvatar, srcAvatar2 } from '@/utils/data'
+import { srcAvatar } from '@/utils/data'
 
-/* ---------------------------------- Types --------------------------------- */
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface MainInfoStickyProps {}
 
-export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
+export const MainInfoSticky = () => {
   return (
     <div className={`sticky top-0 z-10 w-full`}>
       <div
@@ -27,7 +23,7 @@ export const MainInfoSticky: React.FC<MainInfoStickyProps> = () => {
             className={`flex flex-col items-center font-semibold sm:flex-row`}
           >
             <span className={`text-lg sm:mr-2`} role="img" aria-label="name">
-              Son H. Do
+              Son Hong Do
             </span>
             <span className={`text-base`} role="img" aria-label="name">
               🎉 Available for hire.

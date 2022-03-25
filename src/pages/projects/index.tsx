@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Page from '@/components/pages/projects/pages'
-import { getHomeLayout } from '@/layouts/HomeLayout'
+import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 
 const ProjectsPage: NextPageWithLayout = () => {
@@ -12,6 +12,6 @@ const ProjectsPage: NextPageWithLayout = () => {
   )
 }
 
-ProjectsPage.getLayout = getHomeLayout('Projects | @sondh0127')
+ProjectsPage.getLayout = getDefaultLayout('Projects | @sondh0127')
 
 export default ProjectsPage

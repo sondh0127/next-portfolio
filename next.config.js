@@ -1,9 +1,11 @@
 const AutoImport = require('unplugin-auto-import/webpack')
 
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    reactRoot: true,
+  },
   webpack: (config) => {
     config.plugins.push(
       AutoImport({
