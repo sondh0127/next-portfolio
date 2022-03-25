@@ -4,9 +4,15 @@ import ProgressBar from '@badrap/bar-of-progress'
 import Router from 'next/router'
 
 import { AppPropsWithLayout } from '@/types'
+import { ToastProvider, ToastViewport } from '@/components/shared'
 
 const AppProvider: React.FC = ({ children }) => {
-  return <>{children}</>
+  return (
+    <ToastProvider swipeDirection="right">
+      {children}
+      <ToastViewport />
+    </ToastProvider>
+  )
 }
 
 const progress = new ProgressBar({

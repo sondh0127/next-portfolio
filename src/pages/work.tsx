@@ -2,8 +2,17 @@ import { NextPage } from 'next'
 
 import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
+import { Button, Toast } from '@/components/shared'
 
 const WorkPage: NextPageWithLayout = () => {
+  const [open, setOpen] = useState(false)
+  const eventDateRef = useRef(new Date())
+  const timerRef = useRef(0)
+
+  useEffect(() => {
+    return () => clearTimeout(timerRef.current)
+  }, [])
+
   return (
     <div>
       <h1>Work</h1>
@@ -30,8 +39,27 @@ const WorkPage: NextPageWithLayout = () => {
       Desc: Editor
 
       MinterScan - Customer: MinterScanIO (Quang Anh Nguyen) - USA */}
+      <Button
+        onClick={() => {
+          setOpen(false)
+          window.clearTimeout(timerRef.current)
+          timerRef.current = window.setTimeout(() => {
+            eventDateRef.current = oneWeekAway()
+            setOpen(true)
+          }, 100)
+        }}
+      >
+        Toast
+      </Button>
+      <Toast duration={500000} open={open} onOpenChange={setOpen}></Toast>
     </div>
   )
+}
+
+function oneWeekAway() {
+  const now = new Date()
+  const inOneWeek = now.setDate(now.getDate() + 7)
+  return new Date(inOneWeek)
 }
 
 WorkPage.getInitialProps = async (context) => {

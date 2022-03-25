@@ -22,14 +22,18 @@
   },
   "dependencies": {
     "@badrap/bar-of-progress": "^0.1.2",
+    "@radix-ui/react-toast": "^0.1.1",
     "@tailwindcss/typography": "^0.5.2",
     "clsx": "^1.1.1",
     "next": "^12.1.0",
     "react": "18.0.0-rc.0",
     "react-dom": "18.0.0-rc.0",
+    "tailwind-merge": "^1.2.1",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
