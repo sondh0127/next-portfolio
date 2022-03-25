@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useIsomorphicLayoutEffect } from 'react-use'
+import { useIsomorphicLayoutEffect } from '@/hooks'
 
 const usePrevious = (theme: 'dark' | 'light') => {
   const ref = React.useRef<string>()

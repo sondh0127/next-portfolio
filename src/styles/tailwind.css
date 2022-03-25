@@ -1,16 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
+@import './bar-of-progress.css';
 
 @tailwind base;
-
-/* Write your own custom base styles here */
-
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
-/*! purgecss start ignore */
-@import './bar-of-progress.css';
 
 /* Typography */
 .page-title {
@@ -20,10 +12,5 @@
 .section-title {
   @apply mb-3 text-lg font-semibold text-gray-600 dark:text-gray-300;
 }
-/*! purgecss end ignore */
 
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */

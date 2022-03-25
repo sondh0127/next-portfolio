@@ -1,12 +1,11 @@
-import { Input, InputAddon, InputGroup } from '@retail-ui/core'
-import { useThemeCtx } from '@retail-ui/core'
-import * as React from 'react'
+import { Input, InputAddon, InputGroup } from '@/components/shared'
+import React from 'react'
 
 import ContactLogo from './icons/ContactLogo'
 
 export const RightBar: React.FC = (props) => {
   const { children } = props
-  const { theme } = useThemeCtx()
+  const theme: 'light' | 'dark' = 'light'
   return (
     <div className={`fixed top-0 h-full lg:w-72`}>
       <div className={`flex flex-col justify-between h-full lg:w-72`}>

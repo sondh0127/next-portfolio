@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-import { useWindowScroll } from 'react-use'
 
 import { NextPageWithLayout } from '@/types'
 

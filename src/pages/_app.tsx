@@ -1,14 +1,12 @@
 import '@/styles/tailwind.css'
 
 import ProgressBar from '@badrap/bar-of-progress'
-import { ThemeProvider as RetailProvider } from '@retail-ui/core'
 import Router from 'next/router'
 
-import { ThemeProvider } from '@/contexts/ThemeContext'
 import { AppPropsWithLayout } from '@/types'
 
 const AppProvider: React.FC = ({ children }) => {
-  return <RetailProvider>{children}</RetailProvider>
+  return <>{children}</>
 }
 
 const progress = new ProgressBar({

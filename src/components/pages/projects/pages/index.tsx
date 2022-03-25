@@ -5,9 +5,7 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Icon,
-} from '@retail-ui/core'
-import Head from 'next/head'
+} from '@/components/shared'
 import Link from 'next/link'
 import React from 'react'
 

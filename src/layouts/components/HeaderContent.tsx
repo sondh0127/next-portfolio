@@ -1,5 +1,5 @@
-import { Avatar, useThemeCtx } from '@retail-ui/core'
-import * as React from 'react'
+import { Avatar } from '@/components/shared'
+import React from 'react'
 
 import CustomLink from '@/components/CustomLink'
 import Switch from '@/components/Switch'
@@ -141,8 +141,8 @@ const ROUTES = [
 
 export const HeaderContent: React.FC = (props) => {
   const { children } = props
+  const [theme, toggleTheme] = useState('light')
 
-  const { theme, toggleTheme } = useThemeCtx()
 
   return (
     <div className={`relative w-20 xl:w-52 `}>

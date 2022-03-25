@@ -1,4 +1,4 @@
-import { ButtonIcon } from '@retail-ui/core'
+import { ButtonIcon } from '@/components/shared'
 import React from 'react'
 
 import CustomLink from '@/components/CustomLink'

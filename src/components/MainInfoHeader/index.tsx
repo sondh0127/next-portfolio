@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useWindowScroll } from 'react-use'
+import { useWindowScroll } from '@/hooks'
 
 import MainInfo from './MainInfo'
 import MainInfoSticky from './MainInfoSticky'
