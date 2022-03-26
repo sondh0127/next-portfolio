@@ -1,11 +1,10 @@
 import { Input, InputAddon, InputGroup } from '@/components/shared'
 import { useAtom } from 'jotai'
 import { preferredThemeAtom } from './HeaderContent'
-
 import ContactLogo from './icons/ContactLogo'
 
 export const RightBar = () => {
-  const [preferredTheme, setPreferredTheme] = useAtom(preferredThemeAtom)
+  const [preferredTheme] = useAtom(preferredThemeAtom)
 
   return (
     <div className={`fixed top-0 h-full lg:w-72`}>
@@ -41,13 +40,26 @@ export const RightBar = () => {
           <div
             className={`p-4 text-gray-900 bg-gray-200 rounded-lg dark:text-gray-100 dark:bg-gray-600`}
           >
+            <div className={`mt-4`}>
+              <h3 className={`text-xl font-bold`}>TODO</h3>
+              <ul
+                className={`flex flex-col mt-2 space-y-1 list-disc list-inside`}
+              >
+                <li>Redesign Home </li>
+                <li>Put more image for project </li>
+                <li>Use carousel for project images</li>
+                <li>Migrate all icon to unplugin icon</li>
+                <li>Put link to current building</li>
+                <li>Put work experience</li>
+              </ul>
+            </div>
             <div>
               <h3 className={`text-xl font-bold`}>Current building</h3>
               <ul
                 className={`flex flex-col mt-2 space-y-1 list-disc list-inside`}
               >
-                <li>Retail-UI</li>
-                <li>Fullstack Hasura/NextJs boilerplate</li>
+                <li>Interactive Livestream Framework</li>
+                <li>MinterScan IO</li>
               </ul>
             </div>
             <div className={`mt-4`}>
@@ -55,9 +67,9 @@ export const RightBar = () => {
               <ul
                 className={`flex flex-col mt-2 space-y-1 list-disc list-inside`}
               >
-                <li>Testing-library/React</li>
-                <li>React query</li>
-                <li>Prisma</li>
+                <li>Figma Lowcode platfrom</li>
+                <li>Svelte Kit</li>
+                <li>React suspense</li>
               </ul>
             </div>
             <div className={`mt-4`}>
