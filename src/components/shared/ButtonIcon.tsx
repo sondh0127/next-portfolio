@@ -124,7 +124,7 @@ export const ButtonIcon = React.forwardRef<
     isLoading && ButtonIconStyles.loading,
     colorCls[color],
     sizeCls[size],
-    shape && shapeCls[shape],
+    shape && shapeCls[shape]
   )
 
   const spinnerSizeCls = ButtonIconStyles.spinner.size

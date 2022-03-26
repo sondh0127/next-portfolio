@@ -1,5 +1,3 @@
-const AutoImport = require('unplugin-auto-import/webpack')
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,8 +6,16 @@ const nextConfig = {
   },
   webpack: (config) => {
     config.plugins.push(
-      AutoImport({
+      require('unplugin-auto-import/webpack')({
         imports: ['react'],
+      })
+    )
+
+    config.plugins.push(
+      require('unplugin-icons/webpack')({
+        compiler: 'jsx',
+        jsx: 'react',
+        extension: 'jsx',
       })
     )
 

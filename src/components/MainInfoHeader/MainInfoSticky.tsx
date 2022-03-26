@@ -1,6 +1,4 @@
-
 import { srcAvatar } from '@/utils/data'
-
 
 export const MainInfoSticky = () => {
   return (

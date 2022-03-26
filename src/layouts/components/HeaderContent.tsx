@@ -167,9 +167,12 @@ const ROUTES = [
   },
 ]
 
-export const HeaderContent: React.FC = (props) => {
-  const { children } = props
-  const [preferredTheme, setPreferredTheme] = useState<null | string>(null)
+export const preferredThemeAtom = atom<null | string>(null)
+
+import { atom, useAtom } from 'jotai'
+
+export const HeaderContent = () => {
+  const [preferredTheme, setPreferredTheme] = useAtom(preferredThemeAtom)
 
   useEffect(() => {
     try {
@@ -210,7 +213,9 @@ export const HeaderContent: React.FC = (props) => {
                       title={item.name}
                       href={href}
                       className={`hover:text-purple-600 dark:hover:text-purple-600 flex flex-col items-start ${
-                        isActive ? `text-purple-600` : 'text-gray-800 dark:text-gray-100'
+                        isActive
+                          ? `text-purple-600`
+                          : 'text-gray-800 dark:text-gray-100'
                       } `}
                     >
                       <div
@@ -218,7 +223,9 @@ export const HeaderContent: React.FC = (props) => {
                         className={`flex items-center p-2 mt-2 transition duration-150 ease-in-out rounded-full hover:bg-purple-100`}
                       >
                         <div>{isActive ? item.iconSolid : item.icon}</div>
-                        <div className={`hidden mx-4 mt-1 text-lg font-bold xl:block`}>
+                        <div
+                          className={`hidden mx-4 mt-1 text-lg font-bold xl:block`}
+                        >
                           {item.name}
                         </div>
                       </div>
@@ -239,7 +246,9 @@ export const HeaderContent: React.FC = (props) => {
                   ;(window as any).__setPreferredTheme(
                     preferredTheme === 'light' ? 'dark' : 'light'
                   )
-                  setPreferredTheme(preferredTheme === 'light' ? 'dark' : 'light')
+                  setPreferredTheme(
+                    preferredTheme === 'light' ? 'dark' : 'light'
+                  )
                 }}
                 checked={preferredTheme === 'dark'}
               />

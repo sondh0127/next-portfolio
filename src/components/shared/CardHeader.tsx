@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import * as React from 'react'
 
-import { useCardCtx,CardStyles } from './CardContext'
+import { useCardCtx, CardStyles } from './CardContext'
 
 type ReactDivProps = React.HTMLAttributes<HTMLDivElement>
 type Ref = HTMLDivElement

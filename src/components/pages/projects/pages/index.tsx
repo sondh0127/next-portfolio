@@ -1,9 +1,15 @@
-import { Button, ButtonIcon, Card, CardBody, CardFooter, CardHeader } from '@/components/shared'
+import {
+  Button,
+  ButtonIcon,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+} from '@/components/shared'
 import Link from 'next/link'
 import React from 'react'
 
-import WebsiteIcon from '@/components/icons/WebsiteIcon'
-import MainInfoHeader from '@/components/MainInfoHeader'
+import IconApplication from '~icons/carbon/application-web.jsx'
 import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 import {
@@ -51,7 +57,8 @@ const projects: TProject[] = [
   {
     id: `2`,
     name: 'NextHasura Fullstack boilerplate',
-    description: 'A boilerplate which combine Next.js and Hasura to quickly develop applications',
+    description:
+      'A boilerplate which combine Next.js and Hasura to quickly develop applications',
     github: 'https://github.com/sondh0127/nextjs-hasura-fullstack',
     website: 'https://github.com/sondh0127/nextjs-hasura-fullstack',
     image:
@@ -83,13 +90,21 @@ const projects: TProject[] = [
   {
     id: `4`,
     name: 'Doclabels (Graduation Project)',
-    description: 'Annotation system for labelling data from documents (with PDF documents)',
+    description:
+      'Annotation system for labelling data from documents (with PDF documents)',
     github: 'https://github.com/sondh0127/doclabels',
     website: 'https://next-doclabel.sondh0127.vercel.app/',
     image:
       'https://user-images.githubusercontent.com/62163604/93016959-31d12380-f5ef-11ea-9e83-5461ba7eef24.png',
     languages: ['javascript', 'typescript'],
-    technologies: ['reactjs', 'nextjs', 'graphql', 'apolloclient', 'hasura', 'eui'],
+    technologies: [
+      'reactjs',
+      'nextjs',
+      'graphql',
+      'apolloclient',
+      'hasura',
+      'eui',
+    ],
     devtools: ['docker'],
   },
   {
@@ -102,7 +117,14 @@ const projects: TProject[] = [
     image:
       'https://raw.githubusercontent.com/sondh0127/airbnb-clone/develop/demo/searching/design.png',
     languages: ['javascript', 'python'],
-    technologies: ['reactjs', 'flask', 'rest', 'reactrouter', 'redux', 'styledcomponents'],
+    technologies: [
+      'reactjs',
+      'flask',
+      'rest',
+      'reactrouter',
+      'redux',
+      'styledcomponents',
+    ],
     devtools: ['docker'],
   },
   {
@@ -143,7 +165,7 @@ const ProjectsList = () => {
                       title="Website"
                       variant="light"
                       color="secondary"
-                      icon={<WebsiteIcon />}
+                      icon={<IconApplication />}
                     />
                   </a>
                   <a href={project.github} target="__blank">
@@ -178,7 +200,9 @@ const ProjectsList = () => {
                   </p>
                 </CardBody>
               </div>
-              <CardFooter className={`flex-auto bg-gray-100 md:w-1/3 dark:bg-gray-600`}>
+              <CardFooter
+                className={`flex-auto bg-gray-100 md:w-1/3 dark:bg-gray-600`}
+              >
                 <div className={`flex flex-col flex-1 space-y-2`}>
                   <TechListWrapper title="Languages">
                     {project.languages.map((item, index) => {
@@ -187,14 +211,20 @@ const ProjectsList = () => {
                     })}
                   </TechListWrapper>
 
-                  <TechListWrapper title="Tech-stack" className={`pt-2 border-t border-gray-300`}>
+                  <TechListWrapper
+                    title="Tech-stack"
+                    className={`pt-2 border-t border-gray-300`}
+                  >
                     {project.technologies.map((item, index) => {
                       const tech = TECHNOLOGIES[item]
                       return <TechItem key={tech.name + index} tech={tech} />
                     })}
                   </TechListWrapper>
 
-                  <TechListWrapper title="Devtools" className={`pt-2 border-t border-gray-300`}>
+                  <TechListWrapper
+                    title="Devtools"
+                    className={`pt-2 border-t border-gray-300`}
+                  >
                     {project.devtools.map((item, index) => {
                       const tool = DEVTOOLS[item]
                       return <TechItem key={tool.name + index} tech={tool} />
@@ -222,13 +252,16 @@ const CreateProjecLink = () => {
   )
 }
 
-const ProjectsPage = () => {
+const ProjectsPage: NextPageWithLayout = () => {
   return (
     <div>
-      <MainInfoHeader />
-      <div className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}>
+      <div
+        className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}
+      >
         <div className="px-3 py-2 text-center">
-          <h1 className="text-3xl font-bold text-purple-600 underline uppercase">Projects</h1>
+          <h1 className="text-3xl font-bold text-purple-600 underline uppercase">
+            Projects
+          </h1>
           <h3 className="text-lg text-gray-600 dark:text-gray-200">
             Some of the projects I&apos;ve been working on.
           </h3>
@@ -242,5 +275,7 @@ const ProjectsPage = () => {
     </div>
   )
 }
+
+ProjectsPage.getLayout = getDefaultLayout('Projects | @sondh0127')
 
 export default ProjectsPage

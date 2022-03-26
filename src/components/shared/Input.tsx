@@ -63,17 +63,14 @@ export const Input = React.forwardRef<Ref, ReactInputProps & InputProps>(
       isDisabled && InputStyles.disabled,
       !isValid && InputStyles.invalid,
       hasLeft && `pl-10`,
-      hasRight && `pr-10`,
+      hasRight && `pr-10`
     )
 
     return <input ref={ref} className={cls} {...rest} type="text" />
-  },
+  }
 )
 
 Input.displayName = 'Input'
-
-
-
 
 type ReactDivProps = Omit<React.HTMLAttributes<HTMLDivElement>, ''>
 
@@ -86,7 +83,7 @@ type InputAddonProps = {
 }
 
 export const InputAddon = React.forwardRef<
-HTMLDivElement,
+  HTMLDivElement,
   ReactDivProps & InputAddonProps
 >((props, ref) => {
   const { children, className, position = 'left', element = 'icon' } = props
@@ -97,7 +94,7 @@ HTMLDivElement,
     className,
     addonStyles.base,
     element === 'button' && addonStyles.element.button,
-    element === 'icon' && addonStyles.element.icon,
+    element === 'icon' && addonStyles.element.icon
   )
 
   return (
@@ -108,8 +105,6 @@ HTMLDivElement,
 })
 
 InputAddon.displayName = 'InputAddon'
-
-
 
 interface InputGroupProps {}
 

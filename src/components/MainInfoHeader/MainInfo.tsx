@@ -1,7 +1,7 @@
-import * as React from 'react'
+import React from 'react'
+import IconReact from '~icons/logos/react.jsx'
 
-import ReactLogo from '@/components/icons/ReactLogo'
-import { srcAvatar, srcAvatar2 } from '@/utils/data'
+import { srcAvatar } from '@/utils/data'
 
 /* -------------------------------- Constant -------------------------------- */
 
@@ -48,7 +48,7 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
             <div className={`sm:mr-2`}>Software engineer</div>
             <div className={`flex flex-row-reverse items-center sm:flex-row`}>
               <div className={`sm:mr-2`} style={{ color: '#61DAFB' }}>
-                <ReactLogo className={`inline-block w-5 h-5`} />
+                <IconReact className={`inline-block w-5 h-5`} />
               </div>
               <div className={`flex-1`}>Front-end developer</div>
             </div>

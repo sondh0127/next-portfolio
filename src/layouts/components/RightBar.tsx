@@ -1,11 +1,12 @@
 import { Input, InputAddon, InputGroup } from '@/components/shared'
-import React from 'react'
+import { useAtom } from 'jotai'
+import { preferredThemeAtom } from './HeaderContent'
 
 import ContactLogo from './icons/ContactLogo'
 
-export const RightBar: React.FC = (props) => {
-  const { children } = props
-  const theme: 'light' | 'dark' = 'light'
+export const RightBar = () => {
+  const [preferredTheme, setPreferredTheme] = useAtom(preferredThemeAtom)
+
   return (
     <div className={`fixed top-0 h-full lg:w-72`}>
       <div className={`flex flex-col justify-between h-full lg:w-72`}>
@@ -116,7 +117,7 @@ export const RightBar: React.FC = (props) => {
           >
             Hosted on
             <span className={`ml-2`}>
-              {theme === 'dark' && (
+              {preferredTheme === 'dark' && (
                 <svg
                   className={`w-16`}
                   viewBox="0 0 283 64"
@@ -130,7 +131,7 @@ export const RightBar: React.FC = (props) => {
                 </svg>
               )}
 
-              {theme === 'light' && (
+              {preferredTheme === 'light' && (
                 <svg
                   className={`w-16`}
                   viewBox="0 0 283 64"

@@ -68,7 +68,7 @@ export const Avatar = React.forwardRef<Ref, ReactDivProps & AvatarProps>(
       className,
       AvatarStyles.base,
       sizeCls[size],
-      icon && AvatarStyles.avatarIcon,
+      icon && AvatarStyles.avatarIcon
     )
 
     let childrenToRender // priority image => icon => text
@@ -97,18 +97,17 @@ export const Avatar = React.forwardRef<Ref, ReactDivProps & AvatarProps>(
         ></div>
       </div>
     )
-  },
+  }
 )
 
 Avatar.displayName = 'Avatar'
-
 
 export type AvatarGroupProps = {
   // maxCount: number
 }
 
 export const AvatarGroup = React.forwardRef<
-HTMLDivElement,
+  HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement> & AvatarGroupProps
 >((props, ref) => {
   const { children, ...rest } = props
