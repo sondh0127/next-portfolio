@@ -1,5 +1,7 @@
 import React from 'react'
 import IconReact from '~icons/logos/react.jsx'
+import IconVue from '~icons/logos/vue.jsx'
+import IconSvelte from '~icons/logos/svelte-icon.jsx'
 
 import { srcAvatar } from '@/utils/data'
 
@@ -29,9 +31,9 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
           <span className={`text-xl sm:mr-2`} role="img" aria-label="name">
             Son Hong Do
           </span>
-          <span className={`text-lg`} role="img" aria-label="name">
-            🎉 Available for hire.
-          </span>
+        </div>
+        <div className={`text-lg font-medium`} role="img" aria-label="name">
+          🎉 Available for hire.
         </div>
         <div className={`mt-1 text-base font-medium`}>
           <div>
@@ -39,20 +41,20 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
               Hanoi, Vietnam 🇻🇳
             </span>
           </div>
+
+          <div className={`flex items-center justify-center space-x-2`}>
+            <IconReact className={`inline-block w-4 h-4`} />
+            <div className={'font-medium'}>Software Engineer</div>
+            <IconVue className={`inline-block w-4 h-4`} />
+            <div className={`font-medium`}>Front-end developer</div>
+            <IconSvelte className={`inline-block w-4 h-4`} />
+          </div>
           <div>
-            <span role="img" aria-label="vietnam">
-              2020 🎓 New graduated
+            <span role="img" aria-label="graduated">
+              Middle level - 3+ years of experience
             </span>
           </div>
-          <div className={`flex flex-col sm:flex-row`}>
-            <div className={`sm:mr-2`}>Software engineer</div>
-            <div className={`flex flex-row-reverse items-center sm:flex-row`}>
-              <div className={`sm:mr-2`} style={{ color: '#61DAFB' }}>
-                <IconReact className={`inline-block w-5 h-5`} />
-              </div>
-              <div className={`flex-1`}>Front-end developer</div>
-            </div>
-          </div>
+
           <div className={`text-sm italic text-purple-600`}>
             <a
               href="https://github.com/sondh0127"
