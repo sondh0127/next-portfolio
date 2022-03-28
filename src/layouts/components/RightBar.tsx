@@ -51,6 +51,9 @@ export const RightBar = () => {
                 <li>Migrate all icon to unplugin icon</li>
                 <li>Put link to current building</li>
                 <li>Put work experience</li>
+                <li>redesign logo</li>
+                <li>more radix ui + tailwind</li>
+                <li>add some scroll area </li>
               </ul>
             </div>
             <div>
