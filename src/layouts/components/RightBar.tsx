@@ -80,9 +80,9 @@ export const RightBar = () => {
               <ul
                 className={`flex flex-col mt-2 space-y-1 list-disc list-inside`}
               >
-                <li>Vue 3 composition API (Hooks)</li>
-                <li>NextJs with Mdx</li>
-                <li>More React Native</li>
+                <li>Svelte Kit</li>
+                <li>Web 3</li>
+                <li>Product Hunt</li>
               </ul>
             </div>
           </div>

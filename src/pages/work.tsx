@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 import { Button, Toast } from '@/components/shared'
+import { Select } from '@/components/shared'
 
 const WorkPage: NextPageWithLayout = () => {
   const [open, setOpen] = useState(false)
@@ -15,6 +16,7 @@ const WorkPage: NextPageWithLayout = () => {
 
   return (
     <div>
+      <Select />
       <h1>Work</h1>
       List of project work
       <ul>

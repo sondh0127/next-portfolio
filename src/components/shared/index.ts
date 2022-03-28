@@ -11,3 +11,4 @@ export * from './Input'
 export * from './Avatar'
 // Radix
 export * from './Toast'
+export * from './Select'
