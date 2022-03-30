@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import { ButtonIcon } from '@/components/shared'
 import React from 'react'
 
@@ -46,7 +47,12 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <header className="z-40 bg-white shadow-md dark:bg-gray-800">
-      <nav className="flex items-center justify-between h-full mx-auto text-purple-600 sm:max-w-xl dark:text-purple-300 md:max-w-full">
+      <nav
+        className={cx(
+          'flex items-center justify-between h-full mx-auto text-purple-600',
+          'md:max-w-full dark:text-purple-300 sm:max-w-xl'
+        )}
+      >
         <ul className="flex items-center flex-1 px-3 py-2">
           <div className="inline-block">
             <Logo />
@@ -58,12 +64,17 @@ const Header: React.FC<HeaderProps> = (props) => {
                 <CustomLink href={`${item.path}`} key={`${item.path}-${index}`}>
                   {({ isActive, href }) => (
                     <li
-                      className={`relative px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 ${
+                      className={cx(
+                        'relative px-4 py-2 text-gray-600 dark:hover:text-purple-400',
+                        'hover:text-purple-600 dark:text-gray-300',
                         isActive && `text-purple-600 dark:text-purple-400`
-                      }`}
+                      )}
                     >
                       <a
-                        className={`inline-flex items-center w-full text-sm font-semibold transition-colors duration-150`}
+                        className={cx(
+                          'inline-flex items-center w-full text-sm font-semibold transition-colors',
+                          'duration-150'
+                        )}
                         href={href}
                       >
                         <span>{item.name}</span>
@@ -113,12 +124,18 @@ const Header: React.FC<HeaderProps> = (props) => {
               <CustomLink href={`${item.path}`} key={`${item.path}-${index}`}>
                 {({ isActive, href }) => (
                   <li
-                    className={`relative px-4 sm:px-10 py-2 hover:bg-purple-300 dark:hover:bg-purple-100  text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 ${
+                    className={cx(
+                      'relative px-4 py-2 text-gray-600 dark:hover:text-purple-400',
+                      'hover:text-purple-600 dark:text-gray-300 dark:hover:bg-purple-100',
+                      'hover:bg-purple-300 sm:px-10',
                       isActive && `text-purple-600 dark:text-purple-400`
-                    }`}
+                    )}
                   >
                     <a
-                      className={`inline-flex items-center w-full text-sm font-semibold transition-colors duration-150`}
+                      className={cx(
+                        'inline-flex items-center w-full text-sm font-semibold transition-colors',
+                        'duration-150'
+                      )}
                       href={href}
                     >
                       <span>{item.name}</span>

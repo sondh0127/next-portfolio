@@ -97,7 +97,12 @@ export const Select = forwardRef<
                     <SelectPrimitive.ItemText>
                       {option.label}
                     </SelectPrimitive.ItemText>
-                    <SelectPrimitive.ItemIndicator className="absolute left-0 w-[25px] inline-flex items-center justify-center">
+                    <SelectPrimitive.ItemIndicator
+                      className={cx(
+                        'absolute left-0 inline-flex items-center justify-center',
+                        'w-[25px]'
+                      )}
+                    >
                       <IconCheckmark />
                     </SelectPrimitive.ItemIndicator>
                   </SelectPrimitive.Item>

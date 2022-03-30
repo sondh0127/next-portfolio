@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import {
   Button,
   ButtonIcon,
@@ -182,7 +183,10 @@ const ProjectsList = () => {
             >
               <div
                 title={project.name}
-                className={`mr-2 font-semibold text-gray-600 truncate cursor-default dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400`}
+                className={cx(
+                  'mr-2 font-semibold text-gray-600 truncate cursor-default',
+                  'dark:hover:text-purple-400 hover:text-purple-600 dark:text-gray-300'
+                )}
               >
                 {project.name}
               </div>

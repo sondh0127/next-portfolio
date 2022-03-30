@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import { Input, InputAddon, InputGroup } from '@/components/shared'
 import { useAtom } from 'jotai'
 import { preferredThemeAtom } from './HeaderContent'
@@ -38,7 +39,10 @@ export const RightBar = () => {
 
           {/* <div>sondh0127</div> */}
           <div
-            className={`p-4 text-gray-900 bg-gray-200 rounded-lg dark:text-gray-100 dark:bg-gray-600`}
+            className={cx(
+              'p-4 text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-600',
+              'dark:text-gray-100'
+            )}
           >
             <div className={`mt-4`}>
               <h3 className={`text-xl font-bold`}>TODO</h3>
@@ -88,7 +92,10 @@ export const RightBar = () => {
           </div>
 
           <div
-            className={`p-4 mt-4 text-gray-900 bg-gray-200 rounded-lg dark:text-gray-100 dark:bg-gray-600`}
+            className={cx(
+              'p-4 mt-4 text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-600',
+              'dark:text-gray-100'
+            )}
           >
             <h3 className={`text-xl font-bold`}>Where to find me</h3>
 
@@ -119,7 +126,10 @@ export const RightBar = () => {
           </div>
         </div>
         <footer
-          className={`flex flex-col items-center py-2 mb-6 text-sm text-gray-800 dark:text-gray-100`}
+          className={cx(
+            'flex flex-col items-center py-2 mb-6 text-sm text-gray-800',
+            'dark:text-gray-100'
+          )}
         >
           <span className={`text-sm text-gray-800 dark:text-gray-100`}>
             © 2022. @sondh0127

@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { cx } from '@/lib'
 import * as React from 'react'
 
 interface ContactLogoProps {
@@ -9,7 +9,7 @@ interface ContactLogoProps {
 export const ContactLogo: React.FC<ContactLogoProps> = (props) => {
   const { children, color, href } = props
 
-  const childrenCls = clsx(`fill-current w-7 h-7`)
+  const childrenCls = cx(`fill-current w-7 h-7`)
 
   const childrenRender = React.isValidElement(children)
     ? React.cloneElement(children, { className: childrenCls })
@@ -17,7 +17,10 @@ export const ContactLogo: React.FC<ContactLogoProps> = (props) => {
   return (
     <a href={href} target="_blank" rel="noreferrer" style={{ color }}>
       <div
-        className={`flex items-center justify-center p-2 transition duration-150 ease-in rounded-full w-max-content hover:bg-purple-200`}
+        className={cx(
+          'flex items-center justify-center p-2 transition duration-150',
+          'ease-in rounded-full w-max-content hover:bg-purple-200'
+        )}
       >
         {childrenRender}
       </div>

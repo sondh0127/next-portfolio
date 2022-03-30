@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import Link from 'next/link'
 import React from 'react'
 
@@ -44,7 +45,10 @@ const AboutPage: NextPageWithLayout = () => {
         </h1>
 
         <div
-          className={`relative flex-shrink-0 w-16 mt-4 text-center no-underline rounded-full select-none sm:mr-6 md:w-32`}
+          className={cx(
+            'relative flex-shrink-0 w-16 mt-4 text-center no-underline',
+            'rounded-full select-none md:w-32 sm:mr-6'
+          )}
         >
           <img
             alt="avatar"

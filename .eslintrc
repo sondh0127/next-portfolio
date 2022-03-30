@@ -1,7 +1,8 @@
 {
   "plugins": [
     "simple-import-sort",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "split-classnames"
   ],
   "extends": [
     "next/core-web-vitals",
@@ -25,6 +26,13 @@
         "semi": false,
         "printWidth": 80,
         "useTabs": false
+      }
+    ],
+    "split-classnames/split-classnames": [
+      "error",
+      {
+        "maxClassNameCharacters": 50,
+        "functionName": "cx"
       }
     ]
   }

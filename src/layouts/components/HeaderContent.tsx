@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import { Avatar } from '@/components/shared'
 import React from 'react'
 
@@ -197,11 +198,17 @@ export const HeaderContent = () => {
     <div className={`relative w-20 xl:w-52 `}>
       <div className={`fixed top-0 flex flex-col h-full`}>
         <div
-          className={`flex flex-col justify-between w-20 h-full px-2 py-2 overflow-y-auto xl:w-52`}
+          className={cx(
+            'flex flex-col justify-between w-20 h-full px-2 py-2 overflow-y-auto',
+            'xl:w-52'
+          )}
         >
           <div className={`flex flex-col items-center xl:items-start`}>
             <div
-              className={`flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full cursor-pointer xl:ml-12 hover:bg-purple-200`}
+              className={cx(
+                'flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full',
+                'cursor-pointer hover:bg-purple-200 xl:ml-12'
+              )}
             >
               <Logo className={`h-8`} />
             </div>
@@ -220,7 +227,10 @@ export const HeaderContent = () => {
                     >
                       <div
                         key={item.path}
-                        className={`flex items-center p-2 mt-2 transition duration-150 ease-in-out rounded-full hover:bg-purple-100`}
+                        className={cx(
+                          'flex items-center p-2 mt-2 transition duration-150 ease-in-out',
+                          'rounded-full hover:bg-purple-100'
+                        )}
                       >
                         <div>{isActive ? item.iconSolid : item.icon}</div>
                         <div
@@ -238,7 +248,10 @@ export const HeaderContent = () => {
 
           <div className={`self-center`}>
             <div
-              className={`flex items-center justify-center flex-1 mb-4 space-x-1 text-gray-800 dark:text-gray-100`}
+              className={cx(
+                'flex items-center justify-center flex-1 mb-4 space-x-1 text-gray-800',
+                'dark:text-gray-100'
+              )}
             >
               <SunSolid className={`hidden w-5 h-5 xl:block`} />
               <Switch
@@ -255,12 +268,18 @@ export const HeaderContent = () => {
               <MoonSolid className={`hidden w-5 h-5 xl:block`} />
             </div>
             <div
-              className={`flex flex-col items-center p-2 mt-2 rounded-full cursor-pointer lg:flex-row hover:bg-purple-100`}
+              className={cx(
+                'flex flex-col items-center p-2 mt-2 rounded-full cursor-pointer',
+                'hover:bg-purple-100 lg:flex-row'
+              )}
             >
               <Avatar src="https://avatars3.githubusercontent.com/u/62163604?s=460&u=2d0ed85df93a996e55f9f81034abd2975d2342d3&v=4" />
               <div className={`hidden mx-4 mt-1 font-semibold xl:block`}>
                 <div
-                  className={`text-sm text-gray-800 text dark:text-gray-100 dark:hover:text-purple-600`}
+                  className={cx(
+                    'text-sm text-gray-800 text dark:hover:text-purple-600',
+                    'dark:text-gray-100'
+                  )}
                 >
                   Son H.Do
                 </div>

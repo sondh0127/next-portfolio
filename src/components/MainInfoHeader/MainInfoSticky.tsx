@@ -1,13 +1,20 @@
+import { cx } from '@/lib'
 import { srcAvatar } from '@/utils/data'
 
 export const MainInfoSticky = () => {
   return (
     <div className={`sticky top-0 z-10 w-full`}>
       <div
-        className={`flex flex-col items-center py-2 bg-gray-100 border-b border-gray-300 sm:flex-row px-7 dark:bg-gray-800`}
+        className={cx(
+          'flex flex-col items-center py-2 bg-gray-100 border-b border-gray-300',
+          'px-7 dark:bg-gray-800 sm:flex-row'
+        )}
       >
         <div
-          className={`relative flex-shrink-0 w-12 text-center no-underline rounded-full select-none sm:mr-6 md:w-16`}
+          className={cx(
+            'relative flex-shrink-0 w-12 text-center no-underline rounded-full',
+            'select-none md:w-16 sm:mr-6'
+          )}
         >
           <img
             alt="avatar"

@@ -1,3 +1,4 @@
+import { cx } from '@/lib'
 import React from 'react'
 import IconReact from '~icons/logos/react.jsx'
 import IconVue from '~icons/logos/vue.jsx'
@@ -14,10 +15,16 @@ interface MainInfoProps {}
 export const MainInfo: React.FC<MainInfoProps> = (props) => {
   return (
     <div
-      className={`flex flex-col items-center py-6 border-b border-gray-300 sm:flex-row px-7`}
+      className={cx(
+        'flex flex-col items-center py-6 border-b border-gray-300',
+        'px-7 sm:flex-row'
+      )}
     >
       <div
-        className={`relative flex-shrink-0 w-24 text-center no-underline rounded-full select-none sm:mr-6 md:w-32`}
+        className={cx(
+          'relative flex-shrink-0 w-24 text-center no-underline rounded-full',
+          'select-none md:w-32 sm:mr-6'
+        )}
       >
         <img
           alt="avatar"
