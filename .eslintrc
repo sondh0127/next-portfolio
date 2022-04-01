@@ -8,8 +8,7 @@
     "next/core-web-vitals",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "@typescript-eslint/no-var-requires": "off",
