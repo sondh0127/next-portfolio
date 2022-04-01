@@ -4,8 +4,45 @@ import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
 import { Button, Toast } from '@/components/shared'
 import { Select } from '@/components/shared'
+import { notion } from '@/lib/notion'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const WorkPage: NextPageWithLayout = () => {
+async function blocks(id: string) {
+  const myBlocks = await notion.blocks.children.list({
+    block_id: id,
+  })
+  return myBlocks
+}
+
+async function post(id: string) {
+  return await notion.pages.retrieve({
+    page_id: id,
+  })
+}
+
+async function posts() {
+  const myPosts = await notion.databases.query({
+    database_id: `${process.env.NOTION_DATABASE}`,
+  })
+  return myPosts
+}
+
+export async function getStaticProps() {
+  const { results } = await posts()
+  return {
+    props: {
+      posts: results,
+    },
+  }
+}
+
+interface Props {
+  posts: [any]
+}
+
+const WorkPage: NextPageWithLayout = (props) => {
+  console.log('[LOG] ~ file: work.tsx ~ line 27 ~ props', props)
   const [open, setOpen] = useState(false)
   const eventDateRef = useRef(new Date())
   const timerRef = useRef(0)
@@ -27,6 +64,15 @@ const WorkPage: NextPageWithLayout = () => {
         <li>twitter react native</li>
         <li>airbnb clone</li>
       </ul>
+      <div>
+        {props.posts.map((result, index) => {
+          return (
+            <div className="text-[10px" key={index}>
+              <pre>{JSON.stringify(result, null, 2)}</pre>
+            </div>
+          )
+        })}
+      </div>
       {/* Thudo Multimedia:
 
       Livestream Transcode Admin CMS.
@@ -64,9 +110,6 @@ function oneWeekAway() {
   return new Date(inOneWeek)
 }
 
-WorkPage.getInitialProps = async (context) => {
-  return {}
-}
-WorkPage.getLayout = getDefaultLayout('Work')
+WorkPage.getLayout = getDefaultLayout('Works')
 
 export default WorkPage
