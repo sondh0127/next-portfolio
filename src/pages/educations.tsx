@@ -43,7 +43,7 @@ const EducationPage: NextPageWithLayout = () => {
                 <strong className={`dark:text-gray-100`}>Aug 2020</strong> at
                 with{' '}
                 <strong className={`dark:text-gray-100`}>
-                  Degree of Enginner in Information Techonology
+                  Degree of Engineer in Information Techonology
                 </strong>
               </li>
               <li>
