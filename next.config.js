@@ -4,7 +4,7 @@ const nextConfig = {
   webpack: (config) => {
     config.plugins.push(
       require('unplugin-auto-import/webpack')({
-        imports: ['react'],
+        imports: ['react', 'jotai'],
       })
     )
 

@@ -39,11 +39,11 @@ const EducationPage: NextPageWithLayout = () => {
                 </a>
               </li>
               <li>
-                I have graduated in{' '}
+                I graduated in{' '}
                 <strong className={`dark:text-gray-100`}>Aug 2020</strong> at
-                with{' '}
+                with a degree of{' '}
                 <strong className={`dark:text-gray-100`}>
-                  Degree of Engineer in Information Techonology
+                  Engineer in Information Technology{' '}
                 </strong>
               </li>
               <li>
