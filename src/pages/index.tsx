@@ -1,6 +1,8 @@
+import { cx } from '@/lib'
 import Link from 'next/link'
 import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
+import { Heading1, Heading2, Heading3 } from '@/components/shared'
 
 const IndexPage: NextPageWithLayout = () => {
   return (
@@ -9,30 +11,26 @@ const IndexPage: NextPageWithLayout = () => {
         className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}
       >
         <div className="px-3 py-2 text-center">
-          <h1 className="text-5xl font-bold text-center text-purple-500">
-            Personal Portfolio
-          </h1>
-          <h2 className="text-[30px] font-bold text-center text-purple-500">
-            by Son Hong Do
-          </h2>
-          <h2 className={`mt-2 font-semibold text-purple-600`}>@sondh0127</h2>
+          <Heading1 className={cx('p-2')}>Personal Portfolio</Heading1>
+          <Heading2 className={cx('p-2')}>by Son Hong Do</Heading2>
+          <Heading3 className={cx('p-2')}>@sondh0127</Heading3>
         </div>
-        <article className={`mx-auto mt-5 prose text-center`}>
-          <h2>
-            <Link href="/about">
-              <span className={`dark:text-gray-100`}>Who I am?</span>
-            </Link>
-          </h2>
-          <h2>
-            <Link href="/projects">
-              <span className={`dark:text-gray-100`}>Check my works !</span>
-            </Link>
-          </h2>
-          <h2>
-            <Link href="/educations">
-              <span className={`dark:text-gray-100`}>My educations !</span>
-            </Link>
-          </h2>
+        <article className={`mx-auto mt-5 prose text-center flex flex-col`}>
+          <Link href="/about">
+            <span className={`dark:text-gray-100 cursor-pointer`}>
+              Who I am?
+            </span>
+          </Link>
+          <Link href="/projects">
+            <span className={`dark:text-gray-100 cursor-pointer`}>
+              Check my works !
+            </span>
+          </Link>
+          <Link href="/educations">
+            <span className={`dark:text-gray-100 cursor-pointer`}>
+              My educations !
+            </span>
+          </Link>
         </article>
       </div>
     </div>
