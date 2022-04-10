@@ -12,5 +12,6 @@ export * from './Avatar'
 // Radix
 export * from './Toast'
 export * from './Select'
+export * from './NavigationMenu'
 
 export * from './Heading'

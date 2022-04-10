@@ -2,8 +2,7 @@ import { NextPage } from 'next'
 
 import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
-import { Button, Toast } from '@/components/shared'
-import { Select } from '@/components/shared'
+import { Button, Toast, Select, NavigationMenu } from '@/components/shared'
 import { notion } from '@/lib/notion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -65,13 +64,13 @@ const WorkPage: NextPageWithLayout = (props) => {
         <li>airbnb clone</li>
       </ul>
       <div>
-        {props.posts.map((result, index) => {
+        {/* {props.posts.map((result, index) => {
           return (
             <div className="text-[10px" key={index}>
               <pre>{JSON.stringify(result, null, 2)}</pre>
             </div>
           )
-        })}
+        })} */}
       </div>
       {/* Thudo Multimedia:
 
@@ -100,6 +99,9 @@ const WorkPage: NextPageWithLayout = (props) => {
         Toast
       </Button>
       <Toast duration={500000} open={open} onOpenChange={setOpen}></Toast>
+      <div className="flex">
+        <NavigationMenu />
+      </div>
     </div>
   )
 }

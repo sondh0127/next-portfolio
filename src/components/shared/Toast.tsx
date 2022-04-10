@@ -1,5 +1,6 @@
 import { cxm, cx } from '@/lib'
 import * as ToastPrimitive from '@radix-ui/react-toast'
+import type * as Radix from '@radix-ui/react-primitive'
 import React from 'react'
 import { Button } from './Button'
 
@@ -18,7 +19,7 @@ export const ToastViewport = () => (
 
 export const Toast = React.forwardRef<
   React.ElementRef<typeof ToastPrimitive.Root>,
-  React.ComponentProps<typeof ToastPrimitive.Root>
+  Radix.ComponentPropsWithoutRef<typeof ToastPrimitive.Root>
 >((props, forwardedRef) => {
   const { className, ...rest } = props
   const eventDateRef = React.useRef(new Date())
