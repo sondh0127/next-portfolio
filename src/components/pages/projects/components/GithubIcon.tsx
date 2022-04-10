@@ -5,7 +5,7 @@ interface GithubIconProps {
 }
 
 export const GithubIcon: React.FC<GithubIconProps> = (props) => {
-  const { children, className } = props
+  const { className } = props
   return (
     <svg
       className={`w-6 h-6 ${className}`}

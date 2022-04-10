@@ -106,7 +106,9 @@ export const InputAddon = React.forwardRef<
 
 InputAddon.displayName = 'InputAddon'
 
-interface InputGroupProps {}
+interface InputGroupProps {
+  children: React.ReactNode
+}
 
 export const InputGroup: React.FC<InputGroupProps> = (props) => {
   const { children } = props

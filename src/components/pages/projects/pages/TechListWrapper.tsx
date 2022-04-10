@@ -3,6 +3,7 @@ import * as React from 'react'
 interface TechListWrapperProps {
   title: string
   className?: string
+  children: React.ReactNode
 }
 
 export const TechListWrapper: React.FC<TechListWrapperProps> = (props) => {

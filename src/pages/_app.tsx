@@ -6,7 +6,7 @@ import Router from 'next/router'
 import { AppPropsWithLayout } from '@/types'
 import { ToastProvider, ToastViewport } from '@/components/shared'
 
-const AppProvider: React.FC = ({ children }) => {
+const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <ToastProvider swipeDirection="right">
       {children}

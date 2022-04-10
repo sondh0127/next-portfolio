@@ -4,6 +4,7 @@ import * as React from 'react'
 interface ContactLogoProps {
   href: string
   color: string
+  children: React.ReactNode
 }
 
 export const ContactLogo: React.FC<ContactLogoProps> = (props) => {

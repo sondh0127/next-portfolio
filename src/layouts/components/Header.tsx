@@ -107,7 +107,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             <ButtonIcon
               size="sm"
               variant="light"
-              icon={MenuSolid}
+              icon={<MenuSolid />}
               onClick={() => setIsOpen(!isOpen)}
               className="p-1 -ml-1 rounded-md focus:outline-none focus:shadow-outline-purple"
               aria-label="Menu"
