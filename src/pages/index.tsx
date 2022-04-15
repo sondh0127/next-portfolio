@@ -1,42 +1,98 @@
 import { cx } from '@/lib'
 import Link from 'next/link'
-import { getDefaultLayout } from '@/layouts/DefaultLayout'
 import { NextPageWithLayout } from '@/types'
-import { Heading1, Heading2, Heading3 } from '@/components/shared'
+import { Heading1, Heading3 } from '@/components/shared'
+import { getSimpleLayout } from '@/layouts/SimpleLayout'
+import IconReact from '~icons/logos/react.jsx'
+import IconVue from '~icons/logos/vue.jsx'
+import IconSvelte from '~icons/logos/svelte-icon.jsx'
+import { srcAvatar } from '@/utils'
 
 const IndexPage: NextPageWithLayout = () => {
   return (
-    <div>
-      <div
-        className={`mx-auto mt-4 mb-12 sm:max-w-md md:max-w-2xl lg:max-w-4xl`}
-      >
-        <div className="px-3 py-2 text-center">
-          <Heading1 className={cx('p-2')}>Personal Portfolio</Heading1>
-          <Heading2 className={cx('p-2')}>by Son Hong Do</Heading2>
-          <Heading3 className={cx('p-2')}>@sondh0127</Heading3>
-        </div>
-        <article className={`mx-auto mt-5 prose text-center flex flex-col`}>
-          <Link href="/about">
-            <span className={`dark:text-gray-100 cursor-pointer`}>
-              Who I am?
-            </span>
-          </Link>
-          <Link href="/projects">
-            <span className={`dark:text-gray-100 cursor-pointer`}>
-              Check my works !
-            </span>
-          </Link>
-          <Link href="/educations">
-            <span className={`dark:text-gray-100 cursor-pointer`}>
-              My educations !
-            </span>
-          </Link>
-        </article>
+    <div className={cx('', '')}>
+      <div className="px-3 py-2 text-center border-b border-gray-300">
+        <Heading1 className={cx('p-2')}>Personal Portfolio</Heading1>
+        <Heading3 className={cx('p-2')}>by @sondh0127</Heading3>
       </div>
+      <div
+        className={cx(
+          'grid grid-cols-[1fr,2fr,2fr] items-center py-6 border-b border-gray-300',
+          'px-7 sm:flex-row text-gray-600 dark:text-gray-100'
+        )}
+      >
+        <div
+          className={cx(
+            'relative flex-shrink-0 w-24 text-center no-underline rounded-full',
+            'select-none md:w-32 sm:mr-6'
+          )}
+        >
+          <img
+            alt="avatar"
+            className="object-cover w-full h-full bg-purple-300 rounded-full"
+            src={srcAvatar}
+            loading="lazy"
+          />
+        </div>
+        {/*  */}
+        <div>
+          <div className={`flex flex-col items-center font-bold sm:flex-row`}>
+            <span className={`text-xl sm:mr-2`} role="img" aria-label="name">
+              Son Hong Do
+            </span>
+          </div>
+          <div className={`text-lg font-medium`} role="img" aria-label="name">
+            🎉 Available for hire.
+          </div>
+          <div>Hanoi, Vietnam 🇻🇳</div>
+          <div className={`text-sm italic text-purple-600`}>
+            <a
+              href="https://github.com/sondh0127"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @sondh0127
+            </a>
+          </div>
+        </div>
+        {/*  */}
+        <div className={`mt-1 text-base font-medium`}>
+          <div className={`flex items-center justify-center space-x-2`}>
+            <IconReact className={`inline-block w-4 h-4`} />
+            <div className={'font-medium'}>Software Engineer</div>
+            <IconVue className={`inline-block w-4 h-4`} />
+            <div className={`font-medium`}>Front-end developer</div>
+            <IconSvelte className={`inline-block w-4 h-4`} />
+          </div>
+          <div>
+            <span role="img" aria-label="graduated">
+              Middle level - 3+ years of experience
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <ul className={`mt-5 flex space-x-10 justify-center`}>
+        <Link href="/about">
+          <li className={`dark:text-gray-100 text-xl cursor-pointer`}>
+            Who I am?
+          </li>
+        </Link>
+        <Link href="/projects">
+          <li className={`dark:text-gray-100 text-xl cursor-pointer`}>
+            Check my works!
+          </li>
+        </Link>
+        <Link href="/educations">
+          <li className={`dark:text-gray-100 text-xl cursor-pointer`}>
+            My educations!
+          </li>
+        </Link>
+      </ul>
     </div>
   )
 }
 
-IndexPage.getLayout = getDefaultLayout('Home | @sondh0127')
+IndexPage.getLayout = getSimpleLayout('Home | @sondh0127')
 
 export default IndexPage

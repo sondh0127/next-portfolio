@@ -15,7 +15,7 @@ export const MainInfoHeader: React.FC = () => {
     setIsSimple(scroll.y > HEIGHT_THRESHOLD)
   }, [scroll])
   return (
-    <React.Fragment>
+    <>
       <div
         className={`${
           !isSimple ? 'opacity-0 hidden' : 'opacity-100 z-10 block'
@@ -31,7 +31,7 @@ export const MainInfoHeader: React.FC = () => {
       >
         <MainInfo />
       </div>
-    </React.Fragment>
+    </>
   )
 }
 
