@@ -99,8 +99,10 @@ const WorkPage: NextPageWithLayout = (props) => {
         Toast
       </Button>
       <Toast duration={500000} open={open} onOpenChange={setOpen}></Toast>
-      <div className="flex">
-        <NavigationMenu />
+      <div className="flex justify-end">
+        <div>
+          <NavigationMenu />
+        </div>
       </div>
     </div>
   )

@@ -1,20 +1,10 @@
-import { cxm, cx } from '@/lib'
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
-import type * as Radix from '@radix-ui/react-primitive'
+import cx from 'clsx'
 import React from 'react'
 
-export const NavigationMenu = React.forwardRef<
-  React.ElementRef<typeof NavigationMenuPrimitive.Root>,
-  Radix.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
->((props, forwardedRef) => {
-  const { className, ...rest } = props
-
+export const NavigationMenu = (props) => {
   return (
-    <NavigationMenuPrimitive.Root
-      {...rest}
-      ref={forwardedRef}
-      className={cxm('relative', className)}
-    >
+    <NavigationMenuPrimitive.Root className="relative">
       <NavigationMenuPrimitive.List className="flex flex-row rounded-lg bg-white dark:bg-gray-800 p-2 space-x-2">
         <NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Trigger
@@ -168,6 +158,4 @@ export const NavigationMenu = React.forwardRef<
       </div>
     </NavigationMenuPrimitive.Root>
   )
-})
-
-NavigationMenu.displayName = 'Toast'
+}
