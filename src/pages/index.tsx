@@ -58,11 +58,11 @@ const IndexPage: NextPageWithLayout = () => {
         {/*  */}
         <div className={`mt-1 text-base font-medium`}>
           <div className={`flex items-center justify-center space-x-2`}>
-            <IconReact className={`inline-block w-4 h-4`} />
+            Passion in <IconVue className={`inline-block w-4 h-4`} />
             <div className={'font-medium'}>Software Engineer</div>
-            <IconVue className={`inline-block w-4 h-4`} />
+            Live with <IconReact className={`inline-block w-4 h-4`} />
             <div className={`font-medium`}>Front-end developer</div>
-            <IconSvelte className={`inline-block w-4 h-4`} />
+            Crush on <IconSvelte className={`inline-block w-4 h-4`} />
           </div>
           <div>
             <span role="img" aria-label="graduated">
