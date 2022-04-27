@@ -24,13 +24,14 @@
         "tabWidth": 2,
         "semi": false,
         "printWidth": 80,
-        "useTabs": false
+        "useTabs": false,
+        "trailingComma": "all"
       }
     ],
     "split-classnames/split-classnames": [
       "error",
       {
-        "maxClassNameCharacters": 50,
+        "maxClassNameCharacters": 70,
         "functionName": "cx"
       }
     ]
