@@ -6,7 +6,7 @@ import { getSimpleLayout } from '@/layouts/SimpleLayout'
 import IconReact from '~icons/logos/react.jsx'
 import IconVue from '~icons/logos/vue.jsx'
 import IconSvelte from '~icons/logos/svelte-icon.jsx'
-import { srcAvatar } from '@/utils'
+import { srcAvatar } from 'utils'
 
 const IndexPage: NextPageWithLayout = () => {
   return (
@@ -18,13 +18,13 @@ const IndexPage: NextPageWithLayout = () => {
       <div
         className={cx(
           'grid grid-cols-[1fr,2fr,2fr] items-center py-6 border-b border-gray-300',
-          'px-7 sm:flex-row text-gray-600 dark:text-gray-100'
+          'px-7 sm:flex-row text-gray-600 dark:text-gray-100',
         )}
       >
         <div
           className={cx(
             'relative flex-shrink-0 w-24 text-center no-underline rounded-full',
-            'select-none md:w-32 sm:mr-6'
+            'select-none md:w-32 sm:mr-6',
           )}
         >
           <img

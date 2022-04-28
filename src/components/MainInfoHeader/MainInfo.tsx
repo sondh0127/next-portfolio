@@ -4,7 +4,7 @@ import IconReact from '~icons/logos/react.jsx'
 import IconVue from '~icons/logos/vue.jsx'
 import IconSvelte from '~icons/logos/svelte-icon.jsx'
 
-import { srcAvatar } from '@/utils/data'
+import { srcAvatar } from 'utils/data'
 
 /* -------------------------------- Constant -------------------------------- */
 
@@ -17,13 +17,13 @@ export const MainInfo: React.FC<MainInfoProps> = (props) => {
     <div
       className={cx(
         'flex flex-col items-center py-6 border-b border-gray-300',
-        'px-7 sm:flex-row'
+        'px-7 sm:flex-row',
       )}
     >
       <div
         className={cx(
           'relative flex-shrink-0 w-24 text-center no-underline rounded-full',
-          'select-none md:w-32 sm:mr-6'
+          'select-none md:w-32 sm:mr-6',
         )}
       >
         <img

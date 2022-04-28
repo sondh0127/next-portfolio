@@ -20,7 +20,7 @@ import {
   TECHNOLOGIES,
   TLanguages,
   TTechnologies,
-} from '@/utils/data'
+} from 'utils/data'
 
 import GithubIcon from '../components/GithubIcon'
 import TechItem from './TechItem'

@@ -1,4 +1,4 @@
-import { createCtx } from '@/utils'
+import { createCtx } from 'utils'
 
 export const CardStyles = {
   //

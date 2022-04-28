@@ -1,5 +1,5 @@
 import { Spinner } from './Spinner'
-import { cloneElement } from '@/utils'
+import { cloneElement } from 'utils'
 import clsx from 'clsx'
 import * as React from 'react'
 
@@ -124,7 +124,7 @@ export const ButtonIcon = React.forwardRef<
     isLoading && ButtonIconStyles.loading,
     colorCls[color],
     sizeCls[size],
-    shape && shapeCls[shape]
+    shape && shapeCls[shape],
   )
 
   const spinnerSizeCls = ButtonIconStyles.spinner.size

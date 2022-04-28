@@ -1,5 +1,5 @@
 import { Spinner } from './Spinner'
-import { cloneElement } from '@/utils'
+import { cloneElement } from 'utils'
 import clsx from 'clsx'
 import * as React from 'react'
 
@@ -134,7 +134,7 @@ export const Button = React.forwardRef<Ref, ReactButtonProps & ButtonProps>(
       isLoading && ButtonStyles.loading,
       colorCls[color],
       sizeCls[size],
-      shape && shapeCls[shape]
+      shape && shapeCls[shape],
     )
     // Spinner
     const spinnerSizeCls = ButtonStyles.spinner.size
@@ -148,12 +148,12 @@ export const Button = React.forwardRef<Ref, ReactButtonProps & ButtonProps>(
     const iconLeftCls = clsx(
       children && iconCls.variant.left,
       isLoadingCls,
-      iconSizeCls[size]
+      iconSizeCls[size],
     )
     const iconRightCls = clsx(
       children && iconCls.variant.right,
       isLoadingCls,
-      iconSizeCls[size]
+      iconSizeCls[size],
     )
 
     const iconLeftNode = cloneElement(iconLeft, { className: iconLeftCls })
@@ -175,7 +175,7 @@ export const Button = React.forwardRef<Ref, ReactButtonProps & ButtonProps>(
         {iconRightNode}
       </button>
     )
-  }
+  },
 )
 
 Button.displayName = 'Button'

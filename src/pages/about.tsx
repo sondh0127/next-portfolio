@@ -11,7 +11,7 @@ import {
   TECHNOLOGIES,
   TLanguages,
   TTechnologies,
-} from '@/utils/data'
+} from 'utils/data'
 /* ---------------------------------- Data ---------------------------------- */
 const skills: Array<TLanguages | TTechnologies | TDevtools> = [
   'typescript',

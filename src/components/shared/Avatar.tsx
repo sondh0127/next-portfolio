@@ -1,4 +1,4 @@
-import { cloneElement } from '@/utils'
+import { cloneElement } from 'utils'
 import clsx from 'clsx'
 import React from 'react'
 
@@ -68,7 +68,7 @@ export const Avatar = React.forwardRef<Ref, ReactDivProps & AvatarProps>(
       className,
       AvatarStyles.base,
       sizeCls[size],
-      icon && AvatarStyles.avatarIcon
+      icon && AvatarStyles.avatarIcon,
     )
 
     let childrenToRender // priority image => icon => text
@@ -97,7 +97,7 @@ export const Avatar = React.forwardRef<Ref, ReactDivProps & AvatarProps>(
         ></div>
       </div>
     )
-  }
+  },
 )
 
 Avatar.displayName = 'Avatar'

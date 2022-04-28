@@ -1,5 +1,5 @@
 import { cx } from '@/lib'
-import { srcAvatar } from '@/utils/data'
+import { srcAvatar } from 'utils/data'
 
 export const MainInfoSticky = () => {
   return (
@@ -7,13 +7,13 @@ export const MainInfoSticky = () => {
       <div
         className={cx(
           'flex flex-col items-center py-2 bg-gray-100 border-b border-gray-300',
-          'px-7 dark:bg-gray-800 sm:flex-row'
+          'px-7 dark:bg-gray-800 sm:flex-row',
         )}
       >
         <div
           className={cx(
             'relative flex-shrink-0 w-12 text-center no-underline rounded-full',
-            'select-none md:w-16 sm:mr-6'
+            'select-none md:w-16 sm:mr-6',
           )}
         >
           <img
