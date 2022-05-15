@@ -7,7 +7,10 @@ export function replaceElement(
 ): React.ReactNode {
   if (!React.isValidElement(element)) return replacement
 
-  return React.cloneElement(element, typeof props === 'function' ? props() : props)
+  return React.cloneElement(
+    element,
+    typeof props === 'function' ? props() : props,
+  )
 }
 
 export function cloneElement(

@@ -51,7 +51,7 @@ export const Icon = React.forwardRef<SVGRef, ReactSVGProps & IconProps>(
       sizeCls[size],
       color ? colorCls[color] : 'text-current',
       isSolid ? 'fill-current' : 'stroke-current',
-      className
+      className,
     )
 
     return (
@@ -66,7 +66,7 @@ export const Icon = React.forwardRef<SVGRef, ReactSVGProps & IconProps>(
         {children}
       </svg>
     )
-  }
+  },
 )
 
 Icon.displayName = 'Icon'

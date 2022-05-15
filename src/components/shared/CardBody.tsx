@@ -21,7 +21,7 @@ export const CardBody = React.forwardRef<Ref, ReactDivProps & CardBodyProps>(
 
     const spinnerCls = clsx(
       headerStyle.loading.spinner,
-      headerStyle.loading[color]
+      headerStyle.loading[color],
     )
 
     return (
@@ -30,7 +30,7 @@ export const CardBody = React.forwardRef<Ref, ReactDivProps & CardBodyProps>(
         {isLoading && <Spinner className={spinnerCls} />}
       </div>
     )
-  }
+  },
 )
 
 CardBody.displayName = 'CardBody'

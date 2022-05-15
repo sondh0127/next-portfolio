@@ -24,7 +24,7 @@ export const CardFooter = React.forwardRef<
     footerStyle.base,
     isTransparent && footerStyle.transparent,
     footerStyle.color[color],
-    isLoading && footerStyle.loading
+    isLoading && footerStyle.loading,
   )
 
   return (

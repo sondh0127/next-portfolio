@@ -47,7 +47,7 @@ const AboutPage: NextPageWithLayout = () => {
         <div
           className={cx(
             'relative flex-shrink-0 w-16 mt-4 text-center no-underline',
-            'rounded-full select-none md:w-32 sm:mr-6'
+            'rounded-full select-none md:w-32 sm:mr-6',
           )}
         >
           <img

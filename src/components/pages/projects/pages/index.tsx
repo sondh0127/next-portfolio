@@ -185,7 +185,7 @@ const ProjectsList = () => {
                 title={project.name}
                 className={cx(
                   'mr-2 font-semibold text-gray-600 truncate cursor-default',
-                  'dark:hover:text-purple-400 hover:text-purple-600 dark:text-gray-300'
+                  'dark:hover:text-purple-400 hover:text-purple-600 dark:text-gray-300',
                 )}
               >
                 {project.name}

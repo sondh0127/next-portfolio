@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       <nav
         className={cx(
           'flex items-center justify-between h-full mx-auto text-purple-600',
-          'md:max-w-full dark:text-purple-300 sm:max-w-xl'
+          'md:max-w-full dark:text-purple-300 sm:max-w-xl',
         )}
       >
         <ul className="flex items-center flex-1 px-3 py-2">
@@ -67,13 +67,13 @@ const Header: React.FC<HeaderProps> = (props) => {
                       className={cx(
                         'relative px-4 py-2 text-gray-600 dark:hover:text-purple-400',
                         'hover:text-purple-600 dark:text-gray-300',
-                        isActive && `text-purple-600 dark:text-purple-400`
+                        isActive && `text-purple-600 dark:text-purple-400`,
                       )}
                     >
                       <a
                         className={cx(
                           'inline-flex items-center w-full text-sm font-semibold transition-colors',
-                          'duration-150'
+                          'duration-150',
                         )}
                         href={href}
                       >
@@ -128,13 +128,13 @@ const Header: React.FC<HeaderProps> = (props) => {
                       'relative px-4 py-2 text-gray-600 dark:hover:text-purple-400',
                       'hover:text-purple-600 dark:text-gray-300 dark:hover:bg-purple-100',
                       'hover:bg-purple-300 sm:px-10',
-                      isActive && `text-purple-600 dark:text-purple-400`
+                      isActive && `text-purple-600 dark:text-purple-400`,
                     )}
                   >
                     <a
                       className={cx(
                         'inline-flex items-center w-full text-sm font-semibold transition-colors',
-                        'duration-150'
+                        'duration-150',
                       )}
                       href={href}
                     >

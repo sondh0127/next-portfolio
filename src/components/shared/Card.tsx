@@ -27,7 +27,7 @@ export const Card = React.forwardRef<Ref, ReactDivProps & CardProps>(
       className,
       CardStyles.base,
       !isStatic && CardStyles.hov,
-      CardStyles.color[color]
+      CardStyles.color[color],
     )
 
     const cardValue = React.useMemo(() => {
@@ -41,7 +41,7 @@ export const Card = React.forwardRef<Ref, ReactDivProps & CardProps>(
         </div>
       </CardProvider>
     )
-  }
+  },
 )
 
 Card.displayName = 'Card'

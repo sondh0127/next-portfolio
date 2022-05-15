@@ -5,7 +5,7 @@ const nextConfig = {
     config.plugins.push(
       require('unplugin-auto-import/webpack')({
         imports: ['react', 'jotai'],
-      })
+      }),
     )
 
     config.plugins.push(
@@ -13,7 +13,7 @@ const nextConfig = {
         compiler: 'jsx',
         jsx: 'react',
         extension: 'jsx',
-      })
+      }),
     )
 
     // const fileLoaderRule = config.module.rules.find((rule) => rule.test && rule.test.test('.svg'))

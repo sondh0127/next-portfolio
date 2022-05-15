@@ -41,7 +41,7 @@ export const RightBar = () => {
           <div
             className={cx(
               'p-4 text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-600',
-              'dark:text-gray-100'
+              'dark:text-gray-100',
             )}
           >
             <div className={`mt-4`}>
@@ -94,7 +94,7 @@ export const RightBar = () => {
           <div
             className={cx(
               'p-4 mt-4 text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-600',
-              'dark:text-gray-100'
+              'dark:text-gray-100',
             )}
           >
             <h3 className={`text-xl font-bold`}>Where to find me</h3>
@@ -128,7 +128,7 @@ export const RightBar = () => {
         <footer
           className={cx(
             'flex flex-col items-center py-2 mb-6 text-sm text-gray-800',
-            'dark:text-gray-100'
+            'dark:text-gray-100',
           )}
         >
           <span className={`text-sm text-gray-800 dark:text-gray-100`}>

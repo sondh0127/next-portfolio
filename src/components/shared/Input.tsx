@@ -63,11 +63,11 @@ export const Input = React.forwardRef<Ref, ReactInputProps & InputProps>(
       isDisabled && InputStyles.disabled,
       !isValid && InputStyles.invalid,
       hasLeft && `pl-10`,
-      hasRight && `pr-10`
+      hasRight && `pr-10`,
     )
 
     return <input ref={ref} className={cls} {...rest} type="text" />
-  }
+  },
 )
 
 Input.displayName = 'Input'
@@ -94,7 +94,7 @@ export const InputAddon = React.forwardRef<
     className,
     addonStyles.base,
     element === 'button' && addonStyles.element.button,
-    element === 'icon' && addonStyles.element.icon
+    element === 'icon' && addonStyles.element.icon,
   )
 
   return (

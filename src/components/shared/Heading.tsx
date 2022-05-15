@@ -12,7 +12,7 @@ export const Heading1 = ({ className, children }: HeadingProps) => {
         'text-5xl font-bold text-center text-transparent',
         'bg-clip-text caret-pink-600 bg-gradient-to-r',
         'from-rose-600 via-purple-700 to-violet-800',
-        className
+        className,
       )}
     >
       {children}
@@ -27,7 +27,7 @@ export const Heading2 = ({ className, children }: HeadingProps) => {
         'text-4xl font-bold text-center text-transparent',
         'bg-clip-text caret-pink-600 bg-gradient-to-r',
         'from-rose-600 via-purple-700 to-violet-800',
-        className
+        className,
       )}
     >
       {children}
@@ -42,7 +42,7 @@ export const Heading3 = ({ className, children }: HeadingProps) => {
         'text-3xl font-bold text-center text-transparent',
         'bg-clip-text caret-pink-600 bg-gradient-to-r',
         'from-rose-600 via-purple-700 to-violet-800',
-        className
+        className,
       )}
     >
       {children}

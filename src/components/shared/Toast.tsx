@@ -36,7 +36,7 @@ export const Toast = React.forwardRef<
         'radix-swipe-move:translate-x-[var(--radix-toast-swipe-move-x)]',
         'radix-swipe-cancel:translate-x-0 radix-swipe-cancel:duration-100 radix-swipe-cancel:ease-out',
         'radix-swipe-end:animate-swipe-out',
-        className
+        className,
       )}
     >
       <ToastPrimitive.Title className="mb-[5px] text-[15px] font-medium text-gray-800">

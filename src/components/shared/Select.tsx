@@ -54,7 +54,7 @@ export const Select = forwardRef<
           'text-[13px] leading-[1]',
           'bg-white text-purple-500 hover:bg-gray-100',
           'shadow-lg focus:shadow-2xl',
-          className
+          className,
         )}
       >
         <SelectPrimitive.Value />
@@ -100,7 +100,7 @@ export const Select = forwardRef<
                     <SelectPrimitive.ItemIndicator
                       className={cx(
                         'absolute left-0 inline-flex items-center justify-center',
-                        'w-[25px]'
+                        'w-[25px]',
                       )}
                     >
                       <IconCheckmark />

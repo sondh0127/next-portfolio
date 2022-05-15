@@ -20,7 +20,7 @@ export const ContactLogo: React.FC<ContactLogoProps> = (props) => {
       <div
         className={cx(
           'flex items-center justify-center p-2 transition duration-150',
-          'ease-in rounded-full w-max-content hover:bg-purple-200'
+          'ease-in rounded-full w-max-content hover:bg-purple-200',
         )}
       >
         {childrenRender}

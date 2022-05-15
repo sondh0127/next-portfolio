@@ -27,7 +27,7 @@ export const ThemeProvider: React.FC<{ children?: React.ReactNode }> = ({
       !!window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
-        : 'light'
+        : 'light',
     )
   }, [])
 
